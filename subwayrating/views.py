@@ -10,6 +10,10 @@ from django.utils.translation import ugettext as _
 
 
 # Create your views here.
+def index(request):
+    reviews = SubwayStop.objects.all()
+    return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance=RequestContext(request))
+
 def view_comment(request, slug):
     return render_to_response('subwayrating/view_comment.html', {
         'stop_comment': get_object_or_404(SubwayStop, slug=slug)

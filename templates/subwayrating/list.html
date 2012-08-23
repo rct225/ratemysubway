@@ -1,0 +1,14 @@
+{% load comments %}
+{% if reviews %}
+	{% for rev in reviews %}	
+		<p><a href="{{rev.slug}}.html">{{rev.line}} {{rev.name}}</a></p>
+		{% get_comment_list for rev as cmt_list %}
+		{% for comment in cmt_list %}
+			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
+			{{ comment.comment }}
+		{% endfor %}
+	{% endfor %}
+% else %}
+	<p>No reviews available.</p>
+{% endif %}
+	
