@@ -23,4 +23,3 @@ class SubwayStop(models.Model):
     
 class CommentWithRating(Comment):
     rating = RatingField(range=5)
-    

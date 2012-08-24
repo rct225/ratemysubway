@@ -4,7 +4,7 @@
 		<p><a href="{{rev.slug}}.html">{{rev.line}} {{rev.name}}</a></p>
 		{% get_comment_list for rev as cmt_list %}
 		{% for comment in cmt_list %}
-			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
+			<p>{{ comment.user_name }} - {{ comment.submit_date }} - {{ comment.rating }}</p>
 			{{ comment.comment }}
 		{% endfor %}
 	{% endfor %}
