@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models import permalink
 from django.contrib.comments.models import Comment
-from djangoratings.fields import RatingField
 
 # Create your models here.
 
@@ -13,7 +12,7 @@ class SubwayStop(models.Model):
     location = models.CharField(max_length=200)
     slug = models.SlugField(max_length=100)
     enable_comments = models.BooleanField()
-    
+        
     def __unicode__(self):
         return self.name
     
@@ -22,4 +21,8 @@ class SubwayStop(models.Model):
         return('view_stop', None, { 'slug' : self.slug})
     
 class CommentWithRating(Comment):
-    rating = RatingField(range=5)
+    rating = models.IntegerField()
+
+    def save(self, *args, **kwargs):
+        self.content_object.rating.add(score=self.rating, user=self.user, ip_address=self.ip_address)
+        super(CommentWithRating, self).save(*args, **kwargs)
