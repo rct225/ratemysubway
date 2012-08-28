@@ -1,7 +1,6 @@
 from django.forms.util import flatatt
-
 from django.utils.encoding import StrAndUnicode, force_unicode
-from django.utils.html import conditional_escape
+#from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
 
 class StarsRadioInput(StrAndUnicode):
@@ -18,7 +17,7 @@ class StarsRadioInput(StrAndUnicode):
         self.index = index
 
     def __unicode__(self):
-       return mark_safe(u'%s' % self.tag())
+        return mark_safe(u'%s' % self.tag())
 
     def is_checked(self):
         return self.value == self.choice_value

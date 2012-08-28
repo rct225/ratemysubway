@@ -13,7 +13,7 @@ class SubwayStop(models.Model):
     slug = models.SlugField(max_length=100)
     enable_comments = models.BooleanField()
     
-    #rating = 
+    rating = CommentWithRating()
         
     def __unicode__(self):
         return self.name

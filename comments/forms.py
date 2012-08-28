@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.comments.forms import CommentForm
-from subwayrating.models import CommentWithRating
-from subwayrating.widgets import StarsRadioFieldRenderer
+from comments.models import CommentWithRating
+from comments.widgets import StarsRadioFieldRenderer
 
 RATING_CHOICES = (
     (1,1),
@@ -12,7 +12,7 @@ RATING_CHOICES = (
 )
 
 class CommentFormWithRating(CommentForm):
-    rating = forms.CharField(max_length=300)
+    rating = forms.CharField(widget=forms.RadioSelect(renderer=StarsRadioFieldRenderer, attrs={'class':'star'}, choices=RATING_CHOICES))
 
     def get_comment_model(self):
         # Use our custom comment model instead of the built-in one.
