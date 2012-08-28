@@ -126,9 +126,12 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'django.contrib.comments',
-    'djangoratings',
+    #'djangoratings',
     'subwayrating',
+    'comments',
 )
+
+COMMENTS_APP = 'comments'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

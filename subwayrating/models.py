@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models import permalink
-from django.contrib.comments.models import Comment
+from comments.models import CommentWithRating
 
 # Create your models here.
 
@@ -12,6 +12,8 @@ class SubwayStop(models.Model):
     location = models.CharField(max_length=200)
     slug = models.SlugField(max_length=100)
     enable_comments = models.BooleanField()
+    
+    #rating = 
         
     def __unicode__(self):
         return self.name
@@ -20,9 +22,3 @@ class SubwayStop(models.Model):
     def get_absolute_url(self):
         return('view_stop', None, { 'slug' : self.slug})
     
-class CommentWithRating(Comment):
-    rating = models.IntegerField()
-
-    def save(self, *args, **kwargs):
-        self.content_object.rating.add(score=self.rating, user=self.user, ip_address=self.ip_address)
-        super(CommentWithRating, self).save(*args, **kwargs)
