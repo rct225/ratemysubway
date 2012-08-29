@@ -1,6 +1,6 @@
-<script type="text/javascript" src="/static/jquery-1.5.2.js"></script>
-<script type="text/javascript" src="/static/StarRating/jquery.rating.js"></script>
-<script type="text/javascript" src="/static/jquery.query-2.1.7.js"></script>
+<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
+<!-- <script type="text/javascript" src="/static/jquery.query-2.1.7.js"></script> -->
 
 {% load comments %}
 {% if reviews %}
@@ -8,28 +8,31 @@
 		<p><a href="{{rev.slug}}.html">{{rev.line}} {{rev.name}}</a></p>
 		{% get_comment_list for rev as cmt_list %}
 		{% for comment in cmt_list %}
-			<!-- <div id="comment_rating"> -->
-                <input name="star_{{comment.id}}" type="radio" value="1" disabled="disabled"/>
+			<div class="comment_rating">
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
+<!--                 <input name="star_{{comment.id}}" type="radio" value="1" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="2" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="3" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="4" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" value="5" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" value="5" disabled="disabled"/> -->
  				<script type="text/javascript">
 					var rating = {{comment.rating|default:"0"}};
-					if (rating !== 0) {
-						var rating_index = parseInt('{{comment.rating}}');
-						// alert(rating_index);
-						$("input:radio[name=star_{{comment.id}}]")[rating_index-1].checked = "checked";
-						//$('input:radio[name=star_{{comment.id}}]')[rating_index-1].value = rating_index;
-						//$('input:radio[name=star_{{comment.id}}]').rating('select',rating_index-1);
-						//alert(rating_index)
-						
+					if (rating != 0) {
+						//var rating_index = parseInt('{{comment.rating}}');
+						$("input:radio[name=star_{{comment.id}}]")[3-1].checked = "checked";
+						//$("input.radio[name=star_{{comment.id}}]").rating('select', rating_index)						
 					}
 				</script>
-
-              <!-- </div> -->
+			</div>	
+			<div class="comment_body">
 			<p>{{ comment.user_name }} - {{ comment.submit_date }} - {{comment.rating}}</p>
 			{{ comment.comment }}
+			</div>
+			<div class="clear"></div>
 		{% endfor %}
 	{% endfor %}
 {% else %}

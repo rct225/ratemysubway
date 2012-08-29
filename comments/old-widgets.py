@@ -1,7 +1,9 @@
 from django.forms.util import flatatt
 from django.utils.encoding import StrAndUnicode, force_unicode
-from django.utils.html import conditional_escape
+#from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
+from django import forms
+#from django.forms.widgets import RadioFieldRenderer
 
 class StarsRadioInput(StrAndUnicode):
     """
@@ -17,18 +19,7 @@ class StarsRadioInput(StrAndUnicode):
         self.index = index
 
     def __unicode__(self):
-        return self.render()
-
-    def render(self, name=None, value=None, attrs=None, choices=()):
-        name = name or self.name
-        value = value or self.value
-        attrs = attrs or self.attrs
-        if 'id' in self.attrs:
-                label_for = ' for="%s_%s"' % (self.attrs['id'], self.index)
-        else:
-            label_for = ''
-        choice_label = conditional_escape(force_unicode(self.choice_label))
-        return mark_safe(u'<label%s>%s %s</label>' % (label_for, self.tag(), choice_label))
+        return mark_safe(u'%s' % self.tag())
 
     def is_checked(self):
         return self.value == self.choice_value
@@ -41,11 +32,8 @@ class StarsRadioInput(StrAndUnicode):
             final_attrs['checked'] = 'checked'
         return mark_safe(u'<input%s />' % flatatt(final_attrs))
 
-class StarsRadioFieldRenderer(StrAndUnicode):
-    """
-    An object used by RadioSelect to enable customization of radio widgets.
-    """
 
+class StarsRadioFieldRenderer(forms.RadioSelect.renderer):
     def __init__(self, name, value, attrs, choices):
         self.name, self.value, self.attrs = name, value, attrs
         self.choices = choices
@@ -65,3 +53,4 @@ class StarsRadioFieldRenderer(StrAndUnicode):
         """Outputs a <ul> for this set of radio fields."""
         return mark_safe(u'\n%s\n' % u'\n'.join([u'%s'
                 % force_unicode(w) for w in self]))
+    
