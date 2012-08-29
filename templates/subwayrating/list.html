@@ -9,7 +9,7 @@
 		{% get_comment_list for rev as cmt_list %}
 		{% for comment in cmt_list %}
 			<!-- <div id="comment_rating"> -->
-                <input name="star_{{comment.id}}" type="radio" class="star" disabled="disabled"/>
+                <input name="star_{{comment.id}}" value="foo" type="radio" class="star" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star" disabled="disabled"/>
@@ -19,9 +19,11 @@
 					if (rating !== 0) {
 						var rating_index = parseInt('{{comment.rating}}');
 						// alert(rating_index);
-						// $("input:radio[name=star_{{comment.id}}]")[rating_index].checked = "checked";
-						$('input:radio[name=star_{{comment.id}}]').rating('select',rating_index-1)
+						//$("input:radio[name=star_{{comment.id}}]")[rating_index].checked = "checked";
+						$('input:radio[name=star_{{comment.id}}]')[rating_index-1].value = rating_index;
+						$('input:radio[name=star_{{comment.id}}]').rating('select',rating_index-1);
 						alert(rating_index)
+						
 					}
 				</script>
 

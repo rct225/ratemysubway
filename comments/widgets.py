@@ -2,6 +2,8 @@ from django.forms.util import flatatt
 from django.utils.encoding import StrAndUnicode, force_unicode
 #from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
+from django import forms
+#from django.forms.widgets import RadioFieldRenderer
 
 class StarsRadioInput(StrAndUnicode):
     """
@@ -31,7 +33,7 @@ class StarsRadioInput(StrAndUnicode):
         return mark_safe(u'<input%s />' % flatatt(final_attrs))
 
 
-class StarsRadioFieldRenderer(StrAndUnicode):
+class StarsRadioFieldRenderer(forms.RadioSelect.renderer):
     def __init__(self, name, value, attrs, choices):
         self.name, self.value, self.attrs = name, value, attrs
         self.choices = choices
