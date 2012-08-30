@@ -1,6 +1,9 @@
+<html>
+<head>	
 <script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
-<!-- <script type="text/javascript" src="/static/jquery.query-2.1.7.js"></script> -->
+<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
+</head>
 
 {% load comments %}
 {% if reviews %}
@@ -14,7 +17,7 @@
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
-<!--                 <input name="star_{{comment.id}}" type="radio" value="1" disabled="disabled"/>
+ <!--                <input name="star_{{comment.id}}" type="radio" value="1" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="2" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="3" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" value="4" disabled="disabled"/>
@@ -23,7 +26,7 @@
 					var rating = {{comment.rating|default:"0"}};
 					if (rating != 0) {
 						//var rating_index = parseInt('{{comment.rating}}');
-						$("input:radio[name=star_{{comment.id}}]")[3-1].checked = "checked";
+						$("input:radio[name=star_{{comment.id}}]")[rating-1].checked = "checked";
 						//$("input.radio[name=star_{{comment.id}}]").rating('select', rating_index)						
 					}
 				</script>

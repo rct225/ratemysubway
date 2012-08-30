@@ -1,0 +1,21 @@
+<html>
+<head>	
+<script type="text/javascript" src="jquery-1.8.0.js"></script>
+<script type="text/javascript" src="star-rating/jquery.rating.js"></script>
+<link href='star-rating/jquery.rating.css' type="text/css" rel="stylesheet"/>
+</head>
+<body>
+                <input name="star_1" type="radio" class="star" value="1" disabled="disabled"/>
+                <input name="star_1" type="radio" class="star" value="2" disabled="disabled"/>
+                <input name="star_1" type="radio" class="star" value="3" disabled="disabled"/>
+                <input name="star_1" type="radio" class="star" value="4" disabled="disabled"/>
+                <input name="star_1" type="radio" class="star" value="5" disabled="disabled"/>
+ 				<script type="text/javascript">
+					var rating = 4;
+					if (rating != 0) {
+						$("input:radio[name=star_1]")[rating-1].checked = "checked";
+					}
+				</script>
+	</body>
+</html>
+					
