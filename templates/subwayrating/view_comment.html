@@ -9,7 +9,11 @@
  
 {% if stop_comment.enable_comments %}
   {% with stop_comment.get_absolute_url as next %}
-    {% render_comment_form for stop_comment %}
+    {% get_comment_form for stop_comment as form%}
+    	<form action="{% comment_form_target %}" method="post">
+    		{% csrf_token %}
+    		{{ form }}
+    	</form>
   {% endwith %}
 {% else %}
   {% trans "Comments are closed." %}
