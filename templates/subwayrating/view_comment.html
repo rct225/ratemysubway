@@ -1,3 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<title>List of Subway Stations</title>
+<html>
+<head>	
+<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
+<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
+</head>
+
 {% load i18n %}
 {% load comments %}
  
@@ -5,15 +15,30 @@
  
 {% get_comment_count for stop_comment as comment_count %}
 <h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
-<p>{% render_comment_list for stop_comment %}</p>
- 
+		{% get_comment_list for stop_comment as cmt_list %}
+		{% for comment in cmt_list %}
+			<div class="comment_rating">
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
+ 				<script type="text/javascript">
+					var rating = {{comment.rating|default:"0"}};
+					if (rating != 0) {
+						$("input:radio[name=star_{{comment.id}}]")[rating-1].checked = "checked";	
+					}
+				</script>
+			</div>	
+			<div class="comment_body">
+			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
+			{{ comment.comment }}
+			</div>
+		{% endfor %}
+		
 {% if stop_comment.enable_comments %}
   {% with stop_comment.get_absolute_url as next %}
-    {% get_comment_form for stop_comment as form%}
-    	<form action="{% comment_form_target %}" method="post">
-    		{% csrf_token %}
-    		{{ form }}
-    	</form>
+    {% render_comment_form for stop_comment %}
   {% endwith %}
 {% else %}
   {% trans "Comments are closed." %}

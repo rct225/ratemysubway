@@ -12,7 +12,6 @@ RATING_CHOICES = (
 )
 
 class CommentFormWithRating(CommentForm):
-    #rating = forms.CharField(widget=forms.RadioSelect(choices=RATING_CHOICES))
 
     rating = forms.CharField(widget=forms.RadioSelect(renderer=StarsRadioFieldRenderer, attrs={'class':'star'}, choices=RATING_CHOICES))
     
