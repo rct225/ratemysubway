@@ -2,6 +2,7 @@ from django.db import models
 from django.db.models import permalink
 from comments.models import CommentWithRating
 
+
 # Create your models here.
 
 class SubwayStop(models.Model):
@@ -21,4 +22,6 @@ class SubwayStop(models.Model):
     @permalink
     def get_absolute_url(self):
         return('view_stop', None, { 'slug' : self.slug})
+    
+    
     

@@ -20,7 +20,7 @@ class CommentFormWithRating(CommentForm):
         return CommentWithRating
 
     def get_comment_create_data(self):
-        # Use the data of the superclass, and add in the title field
+        # Use the data of the superclass, and add in the rating field
         data = super(CommentFormWithRating, self).get_comment_create_data()
         data['rating'] = self.cleaned_data['rating']
         return data
