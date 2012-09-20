@@ -1,18 +1,15 @@
 from django.db import models
 from django.contrib.comments.models import Comment
-from django.db.models import Avg
+#from django.db.models import Avg
 
 # Create your models here.
-
+    
 class CommentWithRating(Comment):
     rating = models.IntegerField()
+    
     
     # def save(self, *args, **kwargs):
         # self.content_object.rating.add(score=self.rating, user=self.user, ip_address=self.ip_address)
         # super(CommentWithRating, self).save(*args, **kwargs)
  
     
-class CommentWithRatingManager(models.Manager):    
-    def get_average_rating(self):
-        ratings = self.objects.get()
-        return ratings.rating_set.aggregate(Avg('rating')).values()[0]
