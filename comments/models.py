@@ -10,6 +10,9 @@ class CommentWithRating(Comment):
     # def save(self, *args, **kwargs):
         # self.content_object.rating.add(score=self.rating, user=self.user, ip_address=self.ip_address)
         # super(CommentWithRating, self).save(*args, **kwargs)
+ 
+    
+class CommentWithRatingManager(models.Manager):    
     def get_average_rating(self):
         ratings = self.objects.get()
         return ratings.rating_set.aggregate(Avg('rating')).values()[0]
