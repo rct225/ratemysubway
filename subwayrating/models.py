@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models import permalink
-from comments.models import CommentWithRating, CommentManager
-
+from comments.models import CommentWithRating
 
 
 # Create your models here.
@@ -16,8 +15,6 @@ class SubwayStop(models.Model):
     enable_comments = models.BooleanField()
     
     rating = CommentWithRating()
-    
-    objects = CommentManager()
         
     def __unicode__(self):
         return self.name
