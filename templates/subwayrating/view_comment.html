@@ -11,7 +11,7 @@
 {% load i18n %}
 {% load comments %}
  
-<h1>{{stop_comment.slug}}</h1>
+<h1>{{stop_comment.slug}} {{average_rating}}</h1>
  
 {% get_comment_count for stop_comment as comment_count %}
 <h2>{% trans "Comments" %} ({{ comment_count }}):</h2>

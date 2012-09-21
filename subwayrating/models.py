@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models import permalink
-from comments.models import CommentWithRating
+from comments.models import CommentWithRating, CommentManager
+
 
 
 # Create your models here.
@@ -15,13 +16,19 @@ class SubwayStop(models.Model):
     enable_comments = models.BooleanField()
     
     rating = CommentWithRating()
+    
+    objects = CommentManager()
         
     def __unicode__(self):
         return self.name
+
     
     @permalink
     def get_absolute_url(self):
         return('view_stop', None, { 'slug' : self.slug})
+    
+    
+    
     
     
     
