@@ -15,13 +15,16 @@ def index(request):
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance=RequestContext(request))
 
 def view_comment(request, slug):
-    ratings = CommentWithRating.objects.for_model(SubwayStop.objects.get(slug=slug))
-    rating_sum = 0
-    for rating in ratings:
-        rating_sum = rating_sum + rating.rating
-    average_rating = rating_sum / ratings.count()
-    return render_to_response('subwayrating/view_comment.html', {
-        'stop_comment': get_object_or_404(SubwayStop, slug=slug), 'average_rating': average_rating
+    # ratings = CommentWithRating.objects.for_model(SubwayStop.objects.get(slug=slug))
+    # rating_sum = 0
+    # for rating in ratings:
+        # rating_sum = rating_sum + rating.rating
+    # average_rating = rating_sum / ratings.count()
+    # return render_to_response('subwayrating/view_comment.html', {
+        # 'stop_comment': get_object_or_404(SubwayStop, slug=slug), 'average_rating': average_rating
+    # }, context_instance=RequestContext(request))
+        return render_to_response('subwayrating/view_comment.html', {
+        'stop_comment': get_object_or_404(SubwayStop, slug=slug)
     }, context_instance=RequestContext(request))
     
     

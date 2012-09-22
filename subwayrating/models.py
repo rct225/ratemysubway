@@ -19,6 +19,15 @@ class SubwayStop(models.Model):
     def __unicode__(self):
         return self.name
 
+    def get_average_rating(self):
+        ratings = CommentWithRating.objects.for_model(self)
+        ratings_count = ratings.count()
+        if ratings_count == 0:
+            ratings_count = 1
+        rating_sum = 0
+        for rating in ratings:
+            rating_sum = rating_sum + rating.rating
+        return rating_sum / ratings_count
     
     @permalink
     def get_absolute_url(self):
