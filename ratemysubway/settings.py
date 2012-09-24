@@ -131,7 +131,28 @@ INSTALLED_APPS = (
     #'djangoratings',
     'subwayrating',
     'comments',
+    'social_auth'
 )
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',  
+    'social_auth.context_processors.social_auth_by_type_backends',
+)
+
+SOCIAL_AUTH_DEFAULT_USERNAME = 'new_social_auth_user'
+
+FACEBOOK_APP_ID = '138235456316939'
+FACEBOOK_API_SECRET = '8cfc5debf263eca6e0a8835bff8ea042'
+
+LOGIN_URL          = '/login-form/'
+LOGIN_REDIRECT_URL = '/logged-in/'
+LOGIN_ERROR_URL    = '/login-error/'
+
 
 COMMENTS_APP = 'comments'
 
