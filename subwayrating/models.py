@@ -29,6 +29,9 @@ class SubwayStop(models.Model):
             rating_sum = rating_sum + rating.rating
         return rating_sum / ratings_count
     
+    def __lt__(self, other):
+        return self.get_average_rating() < other.get_average_rating()
+    
     @permalink
     def get_absolute_url(self):
         return('view_stop', None, { 'slug' : self.slug})

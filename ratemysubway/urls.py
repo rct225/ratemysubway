@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     url(r'^subwayrating/$', 'subwayrating.views.index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^subwayrating/(?P<slug>[^\.]+).html', 'subwayrating.views.view_comment', name='view_comment'),
+    url(r'^subwayrating/top5', 'subwayrating.views.top_n_stops'),
 )

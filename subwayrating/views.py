@@ -7,6 +7,8 @@ from django.template import RequestContext
 #from django.contrib.comments.signals import comment_was_posted
 #from django.utils.translation import ugettext as _
 from comments.models import CommentWithRating
+import heapq
+
 
 
 # Create your views here.
@@ -26,5 +28,12 @@ def view_comment(request, slug):
         return render_to_response('subwayrating/view_comment.html', {
         'stop_comment': get_object_or_404(SubwayStop, slug=slug)
     }, context_instance=RequestContext(request))
+        
+def top_n_stops(request):
+    reviews = SubwayStop.objects.all()
+    return render_to_response('subwayrating/topn.html', {'reviews': heapq.nlargest(5, reviews)}, context_instance=RequestContext(request))
+
+    
+        
     
     
