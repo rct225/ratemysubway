@@ -130,28 +130,31 @@ INSTALLED_APPS = (
     #'djangoratings',
     'subwayrating',
     'comments',
-    'social_auth'
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
 )
 
 AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.facebook.FacebookBackend',
     'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',  
-    'social_auth.context_processors.social_auth_by_type_backends',
-    'django.core.context_processors.static',
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    'allauth.account.context_processors.account',
+    'allauth.socialaccount.context_processors.socialaccount',
 )
 
-SOCIAL_AUTH_DEFAULT_USERNAME = 'new_social_auth_user'
+ACCOUNT_EMAIL_REQUIRED = True
 
 FACEBOOK_APP_ID = '138235456316939'
 FACEBOOK_API_SECRET = '8cfc5debf263eca6e0a8835bff8ea042'
 
-LOGIN_URL          = '/login-form/'
-LOGIN_REDIRECT_URL = '/logged-in/'
-LOGIN_ERROR_URL    = '/login-error/'
+
+LOGIN_REDIRECT_URL = '/'
 
 
 COMMENTS_APP = 'comments'
