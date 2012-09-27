@@ -5,17 +5,7 @@ from django.contrib.comments.moderation import CommentModerator, moderator
 
 
 # Create your models here.
-class SubwayStopModerator(CommentModerator):
-    email_notification = False
-    enable_field = 'enable_comments'
-    moderate_after = 0
-    
-    def moderate(self, comment, content_object, request):
-        if comment.user and comment.user.is_authenticated():
-            return False
-        else:
-            return True
-        
+
 
 class SubwayStop(models.Model):
     division = models.CharField(max_length=10)
@@ -48,7 +38,17 @@ class SubwayStop(models.Model):
     def get_absolute_url(self):
         return('view_stop', None, { 'slug' : self.slug})
     
-
+class SubwayStopModerator(CommentModerator):
+    email_notification = False
+    enable_field = 'enable_comments'
+    moderate_after = 0
+    
+    def moderate(self, comment, content_object, request):
+        if comment.user and comment.user.is_authenticated():
+            return False
+        else:
+            return True
+        
         
 if SubwayStop not in moderator._registry:
     moderator.register(SubwayStop, SubwayStopModerator)
