@@ -5,8 +5,9 @@
 
 {% block content %}
   {% load comments %}
+  
   <form action="{% comment_form_target %}" method="post">{% csrf_token %}
-    <div><input type="hidden" name="next" value="{{ form.instance.content_object.get_absolute_url }}" /></div>
+    <div><input type="hidden" name="next" value="{{ stop_comment.slug }}" /></div>
     {% if form.errors %}
     <h1>{% blocktrans count counter=form.errors|length %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}</h1>
     {% else %}
