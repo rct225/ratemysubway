@@ -36,10 +36,11 @@
 			</div>
 		{% endfor %}
 		
-{% if stop_comment.enable_comments %}
+<!-- {% if stop_comment.enable_comments %} -->
   {% with stop_comment.slug as next %}
     {% render_comment_form for stop_comment %}
   {% endwith %}
-{% else %}
+<!-- {% else %}
   {% trans "Comments are closed." %}
-{% endif %}
+{% endif %} -->
+
