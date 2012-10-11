@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<title>List of Subway Stations</title>
+<title>{{stop_comment.slug}} Reviews</title>
 <html>
 <head>	
 <script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
@@ -37,7 +37,7 @@
 		{% endfor %}
 		
 {% if stop_comment.enable_comments %}
-  {% with stop_comment.get_absolute_url as next %}
+  {% with stop_comment.slug as next %}
     {% render_comment_form for stop_comment %}
   {% endwith %}
 {% else %}
