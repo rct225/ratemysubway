@@ -39,7 +39,7 @@
       <div id="comment_form">
         <div>
           {% if user.is_authenticated %}
-          {% get_comment_form for resource as form %}
+          {% get_comment_form for stop_comment as form %}
             <form action="{% comment_form_target %}" method="post">{% csrf_token %}
               <div id="comment_field_errors"></div>
               <input type="hidden" name="next" value="{{request.get_full_path}}" />
