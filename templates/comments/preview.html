@@ -7,7 +7,7 @@
   {% load comments %}
   
   <form action="{% comment_form_target %}" method="post">{% csrf_token %}
-    <div><input type="hidden" name="next" value="{% url stop_comment stop_comment.slug  %}" /></div>
+    <div><input type="hidden" name="next" value="{{ request.META['HTTP_REFERER']}}" /></div>
     {% if form.errors %}
     <h1>{% blocktrans count counter=form.errors|length %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}</h1>
     {% else %}
