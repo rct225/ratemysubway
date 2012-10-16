@@ -7,7 +7,7 @@
   {% load comments %}
   
   <form action="{% comment_form_target %}" method="post">{% csrf_token %}
-    <div><input type="hidden" name="next" value="{{ request.path }}" /></div>
+    <div><input type="hidden" name="next" value="{{ next }}" /></div>
     {% if form.errors %}
     <h1>{% blocktrans count counter=form.errors|length %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}</h1>
     {% else %}
@@ -38,8 +38,7 @@
               {% endif %}
     {% endfor %}
     <p class="submit">
-    <input type="submit" name="submit" class="submit-post" value="{% trans "Post" %}" />
-    <input type="submit" name="preview" class="submit-preview" value="{% trans "Preview" %}" />
+    <input type="submit" name="post" class="button" value="Post" />
     </p>
   </form>
 {% endblock %}
