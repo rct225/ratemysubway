@@ -32,14 +32,6 @@
                 {{ field }}
               {% else %}
                 {% ifequal field.name "rating" %}
-                <div id="rate_container">Rate this stop</div>
-                	<div class="comment_rating">
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
-			</div>	
                   <div id="rate_label">Rate this stop </div><div id="rate">{{ field }}</div>
                  </div>
                 {% else %}
