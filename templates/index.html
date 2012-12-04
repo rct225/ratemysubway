@@ -2,10 +2,15 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <title>Rate My Subway</title>
 <html>
-<head></head>
+<head>
+<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
+</head>
 <body>
-<iframe src="http://robtuck.webfactional.com/subwayrating/top5"></iframe>
-<iframe src="http://robtuck.webfactional.com/subwayrating/bottom5"></iframe>
+<div id="top5"></div>
+<div id="bottom5"></div>
+<script type="text/javascript">
+	$('#top5').load('subwayrating/top5');
+</script>
 </body>
 </html>
 
