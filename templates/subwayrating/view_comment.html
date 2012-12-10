@@ -1,76 +1,131 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<title>{{stop_comment.slug}} Reviews</title>
-<html>
-<head>	
-<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
-<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
-<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<meta name="author" content="Flux User" >
+		<meta name="description" content="My Website" >
+		<meta name="keywords" content="Flux, Mac" >
+		<link href="main.css" rel="stylesheet" media="screen" type="text/css" >
+		<title>&lt;!--FLUXDJANGOVARIABLESTYLECODEstop_comment.slug}} Reviews</title>
+	<link href="mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
+	<script type="text/javascript" src="/static/jquery-1.8.0.js" ></script>
+	<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js" ></script>
+	<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet" >
 </head>
 
-{% load i18n %}
+
+
+
+
+
+
+
+
+
+
+
+	<body style="" >
+	
+<div id="wrapper" style="height:680px; " >
+
+
+         
+		<div id="leftcolumn" style="position:absolute; left:271px; top:0; " >
+		</div>		 
+		<div id="content" style="position:fixed; left:398px; top:209px; " >    
+	 		
+			
+			
+			<div style="position:absolute; top:100px; left:100px; width:100px; height:100px; " >
+			{% load i18n %}
 {% load comments %}
  
 <h1>{{stop_comment.slug}} {{stop_comment.get_average_rating}}</h1>
  
 {% get_comment_count for stop_comment as comment_count %}
-<h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
+</h1><h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
 		{% get_comment_list for stop_comment as cmt_list %}
 		{% for comment in cmt_list %}
-			<div class="comment_rating">
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
- 				<script type="text/javascript">
+			<div class="comment_rating" >
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled" />
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled" />
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled" />
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled" />
+                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled" />
+ 				<script type="text/javascript" >
 					var rating = {{comment.rating|default:"0"}};
 					if (rating != 0) {
 						$("input:radio[name=star_{{comment.id}}]")[rating-1].checked = "checked";	
 					}
 				</script>
 			</div>	
-			<div class="comment_body">
+			<div class="comment_body" >
 			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
 			{{ comment.comment }}
 			</div>
 		{% endfor %}
 		
-      <div id="comment_form">
+      <div id="comment_form" >
         <div>
           {% if user.is_authenticated %}
           {% get_comment_form for stop_comment as form %}
-            <form action="{% comment_form_target %}" method="post">{% csrf_token %}
-              <div id="comment_field_errors"></div>
+            <form action="{% comment_form_target %}" method="post" >{% csrf_token %}
+              <div id="comment_field_errors" ></div>
               <input type="hidden" name="next" value="{{ request.get_full_path }}" />
               {% for field in form %}
               {% if field.is_hidden %}
                 {{ field }}
               {% else %}
                 {% ifequal field.name "rating" %}
-                <div id="rate_container">
-                  <div id="rate_label">Rate this stop </div><div id="rate">{{ field }}</div>
+                <div id="rate_container" >
+                  <div id="rate_label" >Rate this stop </div><div id="rate" >{{ field }}</div>
                  </div>
                 {% else %}
                   {% if field.errors %}{{ field.errors }}{% endif %}
-                  <div class="comment_field {% if field.errors %} error{% endif %}"
-                  {% ifequal field.name "honeypot" %} style="display:none;"{% endifequal %}
+                  <div class="comment_field {% if field.errors %} error{% endif %}" <!--fluxdjangostylecode="" ifequal="" field.name="" "honeypot"="" --="" > style="display:none;"{% endifequal %}
                   {% ifequal field.name "url" %} style="display:none;"{% endifequal %}
                   {% ifequal field.name "name" %} style="display:none;"{% endifequal %}
-                  {% ifequal field.name "email" %} style="display:none;"{% endifequal %}>
-                  {{ field }}
+                  {% ifequal field.name "email" %} style="display:none;"{% endifequal %}&gt;
+                  {{ field --&gt;
                   </div>
                 {% endifequal %}
               {% endif %}
               {% endfor %}
-              <div class="clear"></div>
-              <div class="submit">
+              <div class="clear" ></div>
+              <div class="submit" >
                 <input type="submit" name="post" class="button" value="Post" />
               </div>
             </form>
           {% else %}
-            <div>Please <a href="{{SITE_ROOT}}/accounts/login/">login</a> to add comments</div>
+            <div>Please <a href="{{SITE_ROOT}}/accounts/login/" >login</a> to add comments</div>
           {% endif %}
         </div>
       </div>
 
+			</div>
+
+</div>
+
+		 
+
+		 <div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " >
+		 
+				 
+		 </div>
+
+		 
+
+		 
+
+		 
+   <input type="text" value="" id="searchbox" /><img src="images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ><img src="images/photo.PNG" alt="" style="width:172px; height:33px; position:absolute; left:45%; top:637px; " ></div>
+
+<img src="images/ratemysubwaylogo.png" alt="" id="logo" >
+<img src="images/navbar.png" alt="" id="menubar" usemap="#navbar_map" >
+<map name="navbar_map" >
+	<area shape="rect" coords="0,5,80,30" href="index.html" alt="Home" ></area>
+	<area shape="rect" coords="80,5,145,30" href="about.html" alt="About" ></area>	<area shape="rect" coords="145,5,250,30" href="/subwayrating" alt="Stations" ></area>
+	<area shape="rect" coords="400,10,350,25" href="/login/" alt="login" ></area>
+
+
+</map>
+</body></html>
