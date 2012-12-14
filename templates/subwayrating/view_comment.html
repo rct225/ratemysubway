@@ -24,7 +24,7 @@
 	 		
 			
 			
-			<div style="position:absolute; top:100px; left:100px; width:100px; height:100px; " >
+			<div style="position:absolute; top:40px; left:100px; width:100px; " >
 			{% load i18n %}
 {% load comments %}
  
@@ -92,8 +92,8 @@
           {% endif %}
         </div>
       </div>
-      <div id="google_map" style="position: absolute; left:50px; top:20; ">
-      	<img src="http://maps.googleapis.com/maps/api/staticmap?center={{stop_comment.latitude}},{{stop_comment.longitude}}&zoom=16&size=200x200&sensor=false">
+      <div id="google_map" style="position: fixed; left:700px; top:300; ">
+      	<img src="http://maps.googleapis.com/maps/api/staticmap?center={{stop_comment.latitude}},{{stop_comment.longitude}}&zoom=16&size=300x300&sensor=false">
       </div>
 
 			</div>
