@@ -36,8 +36,8 @@ class SubwayStop(models.Model):
         return rating_sum / ratings_count
     
     def get_google_map(self):
-        lat = self.latitude / 1000000
-        lng = self.longitude / 1000000
+        lat = ( self.latitude / 1000000 ) 
+        lng = ( self.longitude / 1000000 )
         static_map_url = "http://maps.googleapis.com/maps/api/staticmap?center="+ lat + "," + lng + "&zoom=16&size=200x200&sensor=false"
         return static_map_url
     
