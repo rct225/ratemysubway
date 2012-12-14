@@ -29,6 +29,8 @@
 {% load comments %}
  
 <h1>{{stop_comment.slug}} {{stop_comment.get_average_rating}}</h1>
+
+<img src="{{stop_comment.get_google_map}}">
  
 {% get_comment_count for stop_comment as comment_count %}
 </h1><h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
