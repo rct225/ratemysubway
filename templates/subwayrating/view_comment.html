@@ -28,9 +28,9 @@
 			{% load i18n %}
 {% load comments %}
  
-<h1>{{stop_comment.slug}} {{stop_comment.get_average_rating}} {{stop_comment.latitude}}</h1>
+<h1>{{stop_comment.slug}} {{stop_comment.get_average_rating}}</h1>
 
-<img src="{{stop_comment.get_google_map}}">
+
  
 {% get_comment_count for stop_comment as comment_count %}
 </h1><h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div id="google_map">
-      	<img src="{{stop_comment.get_google_map}}">
+      	<img src="http://maps.googleapis.com/maps/api/staticmap?center={{stop_comment.latitude}},{{stop_comment.longitude}}&zoom=16&size=200x200&sensor=false">
       </div>
 
 			</div>
