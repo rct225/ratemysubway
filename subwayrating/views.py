@@ -10,7 +10,8 @@ import heapq
 
 
 
-# Create your views here.    
+# Create your views here.  
+@csrf_exempt  
 def ratings(request):
     reviews = SubwayStop.objects.all()
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance=RequestContext(request))
