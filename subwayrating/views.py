@@ -11,7 +11,7 @@ import heapq
 
 
 # Create your views here.  
-@requires_csrf_token  
+@csrf_exempt  
 def ratings(request):
     reviews = SubwayStop.objects.all()
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance=RequestContext(request))
