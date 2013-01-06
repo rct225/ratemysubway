@@ -21,30 +21,12 @@
 
 
 </map>		 		 
-<div style="position:fixed; left:398px; top:175px; ">
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
-			<div class="comment_rating">
-                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="1" disabled="disabled"/>
-                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="2" disabled="disabled"/>
-                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="3" disabled="disabled"/>
-                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="4" disabled="disabled"/>
-                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="5" disabled="disabled"/>
- 				<script type="text/javascript">
-					var rating = {{rev.get_average_rating|default:"0"}};
-					if (rating != 0) {
-						$("input:radio[name=star_{{rev.id}}]")[rating-1].checked = "checked";	
-					}
-				</script>
-			</div>
-			<br />	
-
-	{% endfor %}
-{% else %}
-	<p>No reviews available.</p>
+			<br />
 {% endif %}
-</div>
+
 
 </body>
 </html>
