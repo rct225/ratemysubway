@@ -6,6 +6,7 @@ from comments.models import CommentWithRating
 from django.contrib.comments.signals import comment_was_posted
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_exempt
+from django.core.cache import cache
 import heapq
 
 
@@ -13,7 +14,12 @@ import heapq
 # Create your views here.  
 @csrf_exempt  
 def ratings(request):
-    reviews = SubwayStop.objects.all()
+    cache_key = 'list_of_subways_cache_key'
+    cache_time = 3600
+    reviews = cache.get(cache_key)
+    if not reviews:
+        reviews = SubwayStop.objects.all()
+        cache.set(cache_key, reviews, cache_time)
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance=RequestContext(request))
 
 def view_comment(request, slug):
