@@ -21,7 +21,7 @@
 
 
 </map>		 		 
-
+<div>
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
@@ -44,7 +44,7 @@
 {% else %}
 	<p>No reviews available.</p>
 {% endif %}
-
+</div>
 
 </body>
 </html>
