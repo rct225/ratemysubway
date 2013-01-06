@@ -6,13 +6,8 @@
 <script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
 <link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
-<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
-<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
-<base target="_top" />
 </head>
 
-<div id="wrapper" >      	 
-		<div id="list_content" style="position:fixed; left:398px; top:175px; " >    
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
@@ -35,8 +30,6 @@
 {% else %}
 	<p>No reviews available.</p>
 {% endif %}
-	</div>
 		 		 
- 
 </body>
 </html>
