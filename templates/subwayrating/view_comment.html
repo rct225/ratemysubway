@@ -5,7 +5,7 @@
 		<meta name="description" content="My Website" >
 		<meta name="keywords" content="Flux, Mac" >
 		<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
-		<title>{{stop_comment.slug}} Reviews</title>
+		<title>{{stop_comment.name}} Reviews</title>
 	<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
 	<script type="text/javascript" src="/static/jquery-1.8.0.js" ></script>
 	<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js" ></script>
@@ -29,7 +29,7 @@
 			{% load i18n %}
 {% load comments %}
  
-<h1>{{stop_comment.slug}} {{stop_comment.get_average_rating}}</h1>
+<h1>{{stop_comment.name}}</h1>
 
 
  
