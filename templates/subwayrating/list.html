@@ -6,37 +6,60 @@
 <script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
 <link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
+<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
+<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
 <base target="_top" />
 </head>
 
+<div id="wrapper" style="height:680px; " >
 
 
-{% load comments %}
+         
+		<div id="leftcolumn" style="position:absolute; left:271px; top:0; " >
+		</div>		 
+		<div id="content" style="position:fixed; left:398px; top:175px; " >    
+
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
-		{% get_comment_list for rev as cmt_list %}
-		{% for comment in cmt_list %}
 			<div class="comment_rating">
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="3" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
-                <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
+                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="1" disabled="disabled"/>
+                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="2" disabled="disabled"/>
+                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="3" disabled="disabled"/>
+                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="4" disabled="disabled"/>
+                <input name="star_{{rev.id}}" type="radio" class="star star_{{rev.id}}" value="5" disabled="disabled"/>
  				<script type="text/javascript">
-					var rating = {{comment.rating|default:"0"}};
+					var rating = {{rev.get_average_rating|default:"0"}};
 					if (rating != 0) {
-						$("input:radio[name=star_{{comment.id}}]")[rating-1].checked = "checked";	
+						$("input:radio[name=star_{{rev.id}}]")[rating-1].checked = "checked";	
 					}
 				</script>
-			</div>	
-			<div class="comment_body">
-			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
-			{{ comment.comment }}
 			</div>
-		{% endfor %}
+			<br />	
+
 	{% endfor %}
 {% else %}
 	<p>No reviews available.</p>
 {% endif %}
 	
+		 <div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " >
+		 
+				 
+		 </div>
+
+		 
+
+		 
+
+		 
+   <input type="text" value="" id="searchbox" /><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ><img src="/static/images/photo.PNG" alt="" style="width:172px; height:33px; position:absolute; left:50%; top:636px; " ></div>
+
+<img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
+<img src="/static/images/navbar.png" alt="" id="menubar" usemap="#navbar_map" >
+<map name="navbar_map" >
+	<area shape="rect" coords="0,5,80,30" href="/" alt="Home" ></area>
+	<area shape="rect" coords="80,5,145,30" href="about.html" alt="About" ></area>	<area shape="rect" coords="145,5,250,30" href="/subwayrating" alt="Stations" ></area>
+	<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
+
+
+</map>
