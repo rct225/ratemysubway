@@ -24,11 +24,11 @@ def view_comment(request, slug):
         
 def top_n_stops(request):
     reviews = SubwayStop.objects.all()
-    return render_to_response('subwayrating/list.html', {'reviews': heapq.nlargest(5, reviews)}, context_instance=RequestContext(request))
+    return render_to_response('subwayrating/topn.html', {'reviews': heapq.nlargest(5, reviews)}, context_instance=RequestContext(request))
 
 def bottom_n_stops(request):
     reviews = SubwayStop.objects.all()
-    return render_to_response('subwayrating/list.html', {'reviews': heapq.nsmallest(5, reviews)}, context_instance=RequestContext(request))
+    return render_to_response('subwayrating/topn.html', {'reviews': heapq.nsmallest(5, reviews)}, context_instance=RequestContext(request))
 
 def comment_messages(sender, comment, request, **kwargs):
     if request.user.is_authenticated():
