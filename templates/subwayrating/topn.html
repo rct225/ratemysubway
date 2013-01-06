@@ -15,8 +15,6 @@
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
-		{% get_comment_list for rev as cmt_list %}
-		{% for comment in cmt_list %}
 			<div class="comment_rating">
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="1" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="2" disabled="disabled"/>
@@ -24,17 +22,13 @@
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="4" disabled="disabled"/>
                 <input name="star_{{comment.id}}" type="radio" class="star star_{{comment.id}}" value="5" disabled="disabled"/>
  				<script type="text/javascript">
-					var rating = {{comment.rating|default:"0"}};
+					var rating = {{rev.get_average_rating|default:"0"}};
 					if (rating != 0) {
 						$("input:radio[name=star_{{comment.id}}]")[rating-1].checked = "checked";	
 					}
 				</script>
 			</div>	
-			<div class="comment_body">
-			<p>{{ comment.user_name }} - {{ comment.submit_date }}</p>
-			{{ comment.comment }}
-			</div>
-		{% endfor %}
+
 	{% endfor %}
 {% else %}
 	<p>No reviews available.</p>
