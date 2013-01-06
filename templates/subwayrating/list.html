@@ -14,7 +14,7 @@
 {% load comments %}
 {% if reviews %}
 	{% for rev in reviews %}	
-		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}} {{rev.get_average_rating}}</a></p>
+		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
 		{% get_comment_list for rev as cmt_list %}
 		{% for comment in cmt_list %}
 			<div class="comment_rating">
