@@ -11,14 +11,9 @@
 <base target="_top" />
 </head>
 
-<div id="wrapper" >
-
-
-         
-		<div id="list_leftcolumn" style="position:absolute; left:271px; top:0; " >
-		</div>		 
+<div id="wrapper" >      
+		<div id="list_leftcolumn" style="position:absolute; left:271px; top:0; " ></div>		 
 		<div id="list_content" style="position:fixed; left:398px; top:175px; " >    
-
 {% if reviews %}
 	{% for rev in reviews %}	
 		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
@@ -42,16 +37,8 @@
 	<p>No reviews available.</p>
 {% endif %}
 	</div>
-		 <div id="list_rightcolumn" style="position:absolute; left:921px; top:-4px; " >
-		 
-				 
-		 </div>
-
-		 
-
-		 
-
-		 
+	<div id="list_rightcolumn" style="position:absolute; left:921px; top:-4px; " ></div>
+		 		 
    <input type="text" value="" id="searchbox" /><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " >
    <img src="/static/images/photo.PNG" alt="" style="width:172px; height:33px; position:absolute; left:50%; top:636px; " >
 
