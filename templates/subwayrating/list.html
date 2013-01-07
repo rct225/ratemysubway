@@ -5,11 +5,13 @@
 <head>	
 <script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js"></script>
+<script type="text/javascript" src="/static/Better-Autocomplete/jquery.better-autocomplete.js"></script>
 <link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet"/>
 <link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
+<link href="/static/Better-Autocomplete/jquery.better-autocomplete.css" type="text/css" rel="stylesheet"/>
 </head>
 
-  <input type="text" value="" id="searchbox" /><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " >
+<form><input type="text" value="" id="searchbox" name="searchbox"/><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ></form>
    
 
 <img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
@@ -20,14 +22,21 @@
 	<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
 
 
-</map>		 		 
-{% if reviews %}
-	{% for rev in reviews %}	
-		<p><a href="{{rev.slug}}.html">{{rev.division}} {{rev.line}} {{rev.name}}</a></p>
-			<br />
+</map>	
+<script>
+var suggestions = {};	 		 
+	{% for rev in reviews %}
+		suggestions['{{rev.name}}'] = '{{rev.slug}}.html';
 	{% endfor %}
-{% endif %}
 
+$(document).ready(function() {
+
+  // Local source, string array. Simplest setup possible
+  $('#searchbox').betterAutocomplete('init', suggestions, {}, {});
+
+}
+
+</script>
 
 </body>
 </html>
