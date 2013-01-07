@@ -27,8 +27,8 @@
 var suggestions = [ 		 
 	{% for rev in reviews %}
 	{
-	name: '{{rev.name}}', 
-	title: '{{rev.slug}}'
+	slug: '{{rev.slug}}', 
+	title: '{{rev.name}}'
 	},	
 	{% endfor %}
 ];
@@ -39,7 +39,7 @@ $(document).ready(function() {
   $('#searchbox').betterAutocomplete('init', suggestions, { autoHighlight: false }, {
   	highlight: function(result, $input, trigger) { // Custom select callback
 		if (trigger == 'key')
-      		$input.val(result.name);
+      		$input.val(result.slug);
     	}
     });
 
