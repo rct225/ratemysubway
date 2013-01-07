@@ -24,10 +24,12 @@
 
 </map>	
 <script>
-var suggestions = {};	 		 
+var suggestions = [	 		 
 	{% for rev in reviews %}
-		suggestions['{{rev.name}}'] = '{{rev.slug}}.html';
+//		suggestions['{{rev.name}}'] = '{{rev.slug}}.html';
+	'{{rev.name}}',	
 	{% endfor %}
+];
 
 $(document).ready(function() {
 
