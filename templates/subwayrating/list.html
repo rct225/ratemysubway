@@ -11,7 +11,7 @@
 <link href="/static/Better-Autocomplete/src/better-autocomplete.css" type="text/css" rel="stylesheet"/>
 </head>
 
-<form><input type="text" value="" id="searchbox" name="searchbox"/><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ></form>
+<form><input type="text" value="" id="searchbox" name="searchbox"/><div id="last-selection">You have not yet selected anything.</div><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ></form>
    
 
 <img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
@@ -33,7 +33,12 @@ var suggestions = [
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', suggestions, {}, {});
+  $('#searchbox').betterAutocomplete('init', suggestions, {}, {
+  	select: function(result, $input) { // Custom select callback
+      $input.val(result.name);
+      $('#last-selection').text('You selected ' + result.name);
+    }
+    });
 
 });
 
