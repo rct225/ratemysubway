@@ -36,7 +36,7 @@ var suggestions = [
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', suggestions, {}, {
+  $('#searchbox').betterAutocomplete('init', suggestions, { charLimit: 0 }, {
   	select: function(result, $input) { // Custom select callback
       $input.val(result.name);
       $('#last-selection').text('You selected ' + result.name);
