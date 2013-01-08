@@ -28,7 +28,7 @@ var suggestions = [
 	{% for rev in reviews %}
 	{
 	slug: '{{rev.slug}}', 
-	title: '{{rev.name}}'
+	title: '{{rev.line}} {{rev.name}}'
 	},	
 	{% endfor %}
 ];
