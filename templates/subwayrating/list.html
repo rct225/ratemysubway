@@ -40,7 +40,8 @@ $(document).ready(function() {
     select: function(result, $input) { // Custom select callback
       	$input.val(result.title);
 //      $('#last-selection').text('You selected ' + result.slug);
-		$('#searchbox').submit();
+		var url = result.slug + '.html';
+		$(location).attr('href', url);
     }
     });
 
