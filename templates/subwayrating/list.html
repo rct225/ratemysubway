@@ -38,8 +38,9 @@ $(document).ready(function() {
   // Local source, string array. Simplest setup possible
   $('#searchbox').betterAutocomplete('init', suggestions, { autoHighlight: false }, {
     select: function(result, $input) { // Custom select callback
-      $input.val(result.title);
-      $('#last-selection').text('You selected ' + result.slug);
+      	$input.val(result.title);
+//      $('#last-selection').text('You selected ' + result.slug);
+		$('#searchbox').submit();
     }
     });
 
