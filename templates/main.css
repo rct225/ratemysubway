@@ -9,6 +9,7 @@
 	position:absolute;
 	left:271px;
 	top:19px;
+	z-index: 1;
 }
 
 #menubar {
