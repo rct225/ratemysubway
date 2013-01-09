@@ -1,37 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-		<meta name="author" content="Flux User" >
-		<meta name="description" content="My Website" >
-		<meta name="keywords" content="Flux, Mac" >
-		<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
-		<title>{{stop_comment.division}} {{stop_comment.line}} {{stop_comment.name}} Reviews</title>
-	<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
-	<script type="text/javascript" src="/static/jquery-1.8.0.js" ></script>
-	<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js" ></script>
-	<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet" >
-	<base target="_top" />
-</head>
+{% extends base.html %}
+{% block title %}{{stop_comment.division}} {{stop_comment.line}} {{stop_comment.name}} Reviews{% endblock %}
+{% block head %}
+<script type="text/javascript" src="/static/jquery-1.8.0.js" ></script>
+<script type="text/javascript" src="/static/star-rating/jquery.rating.pack.js" ></script>
+<link href="/static/star-rating/jquery.rating.css" type="text/css" rel="stylesheet" >
+<base target="_top" />
+{% endblock %}
 
-	<body style="" >
-	
-<div id="wrapper" style="height:680px; " >
+{% block content %}
+<div style="position:absolute; top:40px; left:100px; width:200px; " >
 
-
-         
-		<div id="leftcolumn" style="position:absolute; left:271px; top:0; " >
-		</div>		 
-		<div id="content" style="position:fixed; left:398px; top:209px; " >    
-	 		
-			
-			
-			<div style="position:absolute; top:40px; left:100px; width:200px; " >
-			{% load i18n %}
+{% load i18n %}
 {% load comments %}
  
 <h1>{{stop_comment.division}} {{stop_comment.line}} {{stop_comment.name}}</h1>
-
-
  
 {% get_comment_count for stop_comment as comment_count %}
 </h1><h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
@@ -100,29 +82,4 @@
 			</div>
 
 </div>
-
-		 
-
-		 <div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " >
-		 
-				 
-		 </div>
-
-		 
-
-		 
-
-		 
-   <input type="text" value="" id="searchbox" /><img src="/static/images/search_button.png" alt="" style="position:absolute; left:767px; top:98px; " ><img src="/static/images/photo.PNG" alt="" style="width:172px; height:33px; position:absolute; left:45%; top:637px; " ></div>
-
-<img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
-<img src="/static/images/navbar.png" alt="" id="menubar" usemap="#navbar_map" >
-<map name="navbar_map" >
-	<area shape="rect" coords="0,5,80,30" href="/" alt="Home" ></area>
-	<area shape="rect" coords="80,5,145,30" href="about.html" alt="About" ></area>	
-	<area shape="rect" coords="145,5,250,30" href="/subwayrating" alt="Stations" ></area>
-	<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
-
-
-</map>
-</body></html>
+{% endblock %}
