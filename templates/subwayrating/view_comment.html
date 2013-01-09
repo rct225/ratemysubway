@@ -16,7 +16,7 @@
 <h1>{{stop_comment.division}} {{stop_comment.line}} {{stop_comment.name}}</h1>
  
 {% get_comment_count for stop_comment as comment_count %}
-</h1><h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
+	<h2>{% trans "Comments" %} ({{ comment_count }}):</h2>
 		{% get_comment_list for stop_comment as cmt_list %}
 		{% for comment in cmt_list %}
 			<div class="comment_rating" >
@@ -79,7 +79,5 @@
       	<img src="http://maps.googleapis.com/maps/api/staticmap?center={{stop_comment.latitude}},{{stop_comment.longitude}}&zoom=16&size=200x200&sensor=false">
       </div>
 
-			</div>
-
-</div>
+	</div>
 {% endblock %}
