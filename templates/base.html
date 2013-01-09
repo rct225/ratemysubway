@@ -6,13 +6,50 @@
 	<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
 	<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
 	<link href="/static/Better-Autocomplete/src/better-autocomplete.css" type="text/css" rel="stylesheet"/>
+	{% block head %}{% endblock %}
     <title>{% block title %}RateMySubway{% endblock %}</title>  
   </head>
-  <body>
-    {% block body %}
+   	<body>
+   		<form><input type="text" value="" id="searchbox" name="searchbox"/></form>
+
+		<img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
+		<img src="/static/images/navbar.png" alt="" id="menubar" usemap="#navbar_map" >
+		<map name="navbar_map" >
+			<area shape="rect" coords="0,5,80,30" href="/" alt="Home" ></area>
+			<area shape="rect" coords="80,5,145,30" href="about.html" alt="About" ></area>
+			<area shape="rect" coords="145,5,250,30" href="/subwayrating" alt="Stations" ></area>
+			<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
+		</map>	
+<script>
+var suggestions = [ 		 
+	{% for rev in reviews %}
+	{
+	slug: '{{rev.slug}}', 
+	title: '{{rev.line}} {{rev.name}}'
+	},	
+	{% endfor %}
+];
+
+$(document).ready(function() {
+
+  // Local source, string array. Simplest setup possible
+  $('#searchbox').betterAutocomplete('init', suggestions, { autoHighlight: false }, {
+    select: function(result, $input) { // Custom select callback
+      	$input.val(result.title);
+//      $('#last-selection').text('You selected ' + result.slug);
+		var url = result.slug + '.html';
+		$(location).attr('href', url);
+    }
+    });
+
+});
+</script>
+   		<div id="wrapper" style="height:680px; " >    
+			<div id="leftcolumn" style="position:absolute; left:271px; top:0; " ></div>		 
     {% block content %}
     {% endblock content %}
-    {% endblock body %}
+    		<div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " ></div>
+    
     {% block extra_body %}
     {% endblock extra_body %}
   </body>
