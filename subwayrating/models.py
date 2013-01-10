@@ -24,6 +24,10 @@ class SubwayStop(models.Model):
         
     def __unicode__(self):
         return self.name
+    
+    def get_title(self):
+        title = self.line + ' ' + self.name
+        return title
 
     def get_average_rating(self):
         ratings = CommentWithRating.objects.for_model(self)

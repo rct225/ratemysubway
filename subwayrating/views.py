@@ -9,7 +9,7 @@ from django.core.cache import cache
 #from django.core import serializers
 from django.http import HttpResponse
 from django.template import RequestContext
-from serializers import ModelSerializer
+from serializers import ModelSerializer, Field
 import heapq
 
 
@@ -26,9 +26,11 @@ def ratings(request):
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance = RequestContext(request))
 
 class SubwayStopSerializer(ModelSerializer):
+    title = CharField(source='get_title', readonly=True)
+    description = CharField(source='slug', readonly=True)
+
     class Meta:
         model = SubwayStop
-        fields = ('line', 'name', 'slug')
         
 def get_subway_stops(request):
     cache_key = 'list_of_subways_cache_key'
