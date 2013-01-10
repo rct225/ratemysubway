@@ -6,7 +6,6 @@ from django.contrib.comments.signals import comment_was_posted
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_exempt
 from django.core.cache import cache
-#from django.core import serializers
 from django.http import HttpResponse
 from django.template import RequestContext
 from serializers import ModelSerializer, Field
