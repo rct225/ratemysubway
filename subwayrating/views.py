@@ -6,9 +6,10 @@ from django.contrib.comments.signals import comment_was_posted
 from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import csrf_exempt
 from django.core.cache import cache
-from django.core import serializers
+#from django.core import serializers
 from django.http import HttpResponse
 from django.template import RequestContext
+from serializers import ModelSerializer
 import heapq
 
 
@@ -24,6 +25,11 @@ def ratings(request):
         cache.set(cache_key, reviews, cache_time)
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance = RequestContext(request))
 
+class SubwayStopSerializer(ModelSerializer):
+    class Meta:
+        model = SubwayStop
+        fields = ('line', 'name', 'slug')
+        
 def get_subway_stops(request):
     cache_key = 'list_of_subways_cache_key'
     cache_time = 3600
@@ -31,7 +37,7 @@ def get_subway_stops(request):
     if not reviews:
         reviews = SubwayStop.objects.all()
         cache.set(cache_key, reviews, cache_time)
-    data = serializers.serialize('json', reviews, fields=('line', 'name', 'slug'))
+    data = SubwayStopSerializer().serialize('json', reviews, context = RequestContext(request))
     return HttpResponse(data, mimetype='application/json')
     
         
