@@ -31,12 +31,11 @@ def get_subway_stops(request):
     if not reviews:
         reviews = SubwayStop.objects.all()
         cache.set(cache_key, reviews, cache_time)
-    data = serializers.serialize('json', reviews)
+    data = serializers.serialize('json', reviews, fields=('line', 'name', 'slug'))
     return HttpResponse(data, mimetype='application/json')
     
         
 def view_comment(request, slug):
-        reviews = SubwayStop.objects.all()
         return render_to_response('subwayrating/view_comment.html', {
         'stop_comment': get_object_or_404(SubwayStop, slug=slug)
     }, context_instance = RequestContext(request))
