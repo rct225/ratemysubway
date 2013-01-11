@@ -35,19 +35,7 @@ var suggestions = [
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {
-	processRemoteData: function(data) {
-		if ($.type(data) == 'object' && $.isArray(data))
-        	return data;
-      	else
-        	return [];
-	},
-	select: function(result, $input) {
-      	$input.val(result.title);
-		var url = result.description + '.html';
-		$(location).attr('href', url);
-    }
-    });
+  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {});
 
 });
 
