@@ -35,7 +35,13 @@ var suggestions = [
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {});
+  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', { charLimit: 1 }, {
+  	select: function(result, $input) {
+  		$input.val(result.title);
+  		var url = result.description + '.html';
+		$(location).attr('href', url);
+  	}
+  });
 
 });
 
