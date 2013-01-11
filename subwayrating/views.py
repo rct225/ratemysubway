@@ -8,7 +8,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.cache import cache
 from django.http import HttpResponse
 from django.template import RequestContext
-from serializers import ModelSerializer, CharField
+from serializers import ModelSerializer
+from serializers.fields import CharField
 import heapq
 
 
