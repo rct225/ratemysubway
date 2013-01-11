@@ -37,9 +37,9 @@ $(document).ready(function() {
   // Local source, string array. Simplest setup possible
   $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', { autoHighlight: false }, {
     select: function(result, $input) { // Custom select callback
-      	$input.val(result.name);
+      	$input.val(result.title);
 //      $('#last-selection').text('You selected ' + result.slug);
-		var url = result.slug + '.html';
+		var url = result.description + '.html';
 		$(location).attr('href', url);
     }
     });
