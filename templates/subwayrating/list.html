@@ -35,7 +35,7 @@ var suggestions = [
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', { autoHighlight: false }, {
+  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {
     select: function(result, $input) { // Custom select callback
       	$input.val(result.title);
 //      $('#last-selection').text('You selected ' + result.slug);
