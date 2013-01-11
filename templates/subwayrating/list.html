@@ -25,16 +25,15 @@
 <script>
 var suggestions = [ 		 
 	{% for rev in reviews %}
-	{ title: '{{rev.line}} {{rev.name}}', description: '{{rev.slug}}' 
-	},	
+	{ title: '{{rev.line}} {{rev.name}}', description: '{{rev.slug}}' },	
 	{% endfor %}
 ];
 
 $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
-//  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', { charLimit: 1 }, {
-  $('#searchbox').betterAutocomplete('init', suggestions, {}, {
+  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {
+//  $('#searchbox').betterAutocomplete('init', suggestions, {}, {
   	select: function(result, $input) {
   		$input.val(result.title);
   		var url = result.description + '.html';
