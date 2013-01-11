@@ -36,9 +36,14 @@ $(document).ready(function() {
 
   // Local source, string array. Simplest setup possible
   $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {
-    select: function(result, $input) { // Custom select callback
+	processRemoteData: function(data) {
+		if ($.type(data) == 'object' && $.isArray(data))
+        	return data;
+      	else
+        	return [];
+	},
+	select: function(result, $input) {
       	$input.val(result.title);
-//      $('#last-selection').text('You selected ' + result.slug);
 		var url = result.description + '.html';
 		$(location).attr('href', url);
     }

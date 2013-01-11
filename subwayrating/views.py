@@ -26,8 +26,8 @@ def ratings(request):
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance = RequestContext(request))
 
 class SubwayStopSerializer(ModelSerializer):
-#    title = CharField(source='get_title', readonly=True)
-#    description = CharField(source='slug', readonly=True)
+    title = CharField(source='get_title', readonly=True)
+    description = CharField(source='slug', readonly=True)
 
     class Meta:
         model = SubwayStop
