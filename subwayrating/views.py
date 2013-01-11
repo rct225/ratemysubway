@@ -31,6 +31,7 @@ class SubwayStopSerializer(ModelSerializer):
 
     class Meta:
         model = SubwayStop
+        exclude = ('division', 'line', 'name', 'routes', 'latitude', 'longitude', 'wiki_url', 'mta_url', 'misc_url', 'slug', 'enable_comments')
         
 def get_subway_stops(request):
     cache_key = 'list_of_subways_cache_key'
