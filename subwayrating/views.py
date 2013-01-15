@@ -26,12 +26,12 @@ def ratings(request):
     return render_to_response('subwayrating/list.html', {'reviews': reviews}, context_instance = RequestContext(request))
 
 class SubwayStopSerializer(ModelSerializer):
-    title = CharField(source='get_title', readonly=True)
-    description = CharField(source='slug', readonly=True)
+    label = CharField(source='get_title', readonly=True)
+    value = CharField(source='slug', readonly=True)
 
     class Meta:
         model = SubwayStop
-        exclude = ('id', 'division', 'line', 'name', 'routes', 'latitude', 'longitude', 'wiki_url', 'mta_url', 'misc_url', 'slug', 'enable_comments')
+        exclude = ('division', 'line', 'name', 'routes', 'latitude', 'longitude', 'wiki_url', 'mta_url', 'misc_url', 'slug', 'enable_comments')
         
 def get_subway_stops(request):
     cache_key = 'list_of_subways_cache_key'
