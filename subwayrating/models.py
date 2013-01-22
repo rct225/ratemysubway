@@ -26,7 +26,7 @@ class SubwayStop(models.Model):
         return self.name
     
     def get_title(self):
-        title = self.line + ' ' + self.name
+        title = self.name + '(' + self.line + ')'
         return title
 
     def get_average_rating(self):
