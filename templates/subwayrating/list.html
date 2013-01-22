@@ -23,12 +23,6 @@
 
 </map>	
 <script>
-var suggestions = [ 		 
-	{% for rev in reviews %}
-	{ title: '{{rev.line}} {{rev.name}}', description: '{{rev.slug}}' },	
-	{% endfor %}
-];
-
 $(document).ready(function() {
 
   $('#searchbox').autocomplete({

@@ -2,10 +2,10 @@
 <html>
   <head>
   	<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
-	<script type="text/javascript" src="/static/Better-Autocomplete/src/jquery.better-autocomplete.js"></script>
+  	<script type="text/javascript" src="/static/jquery-ui-1.9.2/js/jquery-ui-1.9.2.custom.js"></script>
+  	<link href="/static/jquery-ui-1.9.2/css/smoothness/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet"/>
 	<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
 	<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
-	<link href="/static/Better-Autocomplete/src/better-autocomplete.css" type="text/css" rel="stylesheet"/>
 	{% block head %}{% endblock %}
     <title>{% block title %}RateMySubway{% endblock %}</title>  
   </head>
@@ -21,21 +21,13 @@
 			<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
 		</map>	
 <script>
-var suggestions = [ 		 
-	{% for rev in reviews %}
-	{
-	slug: '{{rev.slug}}', 
-	title: '{{rev.line}} {{rev.name}}'
-	},	
-	{% endfor %}
-];
 
 $(document).ready(function() {
 
   $('#searchbox').autocomplete({
       source: function(req, response) {
          $.ajax({
-          url: "../subwayrating/stops",
+          url: "http://robtuck.webfactional.com/subwayrating/stops",
           datatype: "json",
           success: function (data) {
               var re = $.ui.autocomplete.escapeRegex(req.term);
