@@ -31,15 +31,24 @@ var suggestions = [
 
 $(document).ready(function() {
 
-  // Local source, string array. Simplest setup possible
-  $('#searchbox').betterAutocomplete('init', 'http://robtuck.webfactional.com/subwayrating/stops', {}, {
-//  $('#searchbox').betterAutocomplete('init', suggestions, {}, {
-  	select: function(result, $input) {
-  		$input.val(result.title);
-  		var url = result.description + '.html';
+  $('#searchbox').autocomplete({
+      source: function(req, response) {
+         $.ajax({
+          url: "../subwayrating/stops",
+          datatype: "json",
+          success: function (data) {
+              var re = $.ui.autocomplete.escapeRegex(req.term);
+              var matcher = new RegExp( "^" + re, "i" );
+              response($.grep(data, function(item){return matcher.test(item.label);}) );
+              }
+          });
+      },
+      minLength: 2,
+      select: function( event, ui ) {
+		var url = ui.item.value + '.html';
 		$(location).attr('href', url);
-  	}
-  });
+    }
+    });
 
 });
 
