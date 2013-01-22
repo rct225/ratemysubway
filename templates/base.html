@@ -27,7 +27,7 @@ $(document).ready(function() {
   $('#searchbox').autocomplete({
       source: function(req, response) {
          $.ajax({
-          url: "http://robtuck.webfactional.com/subwayrating/stops",
+          url: "stops",
           datatype: "json",
           success: function (data) {
               var re = $.ui.autocomplete.escapeRegex(req.term);
