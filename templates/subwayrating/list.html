@@ -34,7 +34,7 @@ $(document).ready(function() {
   $('#searchbox').autocomplete({
       source: function(req, response) {
          $.ajax({
-          url: "../subwayrating/stops",
+          url: "stops",
           datatype: "json",
           success: function (data) {
               var re = $.ui.autocomplete.escapeRegex(req.term);
