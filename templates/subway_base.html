@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script type="text/javascript" src="/static/jquery-1.8.0.js"></script>
+  	<script type="text/javascript" src="/static/jquery-ui-1.9.2/js/jquery-ui-1.9.2.custom.js"></script>
+  	<link href="/static/jquery-ui-1.9.2/css/smoothness/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet"/>
+	<link href="/static/main.css" rel="stylesheet" media="screen" type="text/css" >
+	<link href="/static/mycssfile.css" rel="stylesheet" media="screen" type="text/css" >
+	{% block head %}{% endblock %}
+    <title>{% block title %}RateMySubway{% endblock %}</title>  
+  </head>
+   	<body>
+   		<form><input type="text" value="" id="searchbox" name="searchbox"/></form>
+
+		<img src="/static/images/ratemysubwaylogo.png" alt="" id="logo" >
+		<img src="/static/images/navbar.png" alt="" id="menubar" usemap="#navbar_map" >
+		<map name="navbar_map" >
+			<area shape="rect" coords="0,5,80,30" href="/" alt="Home" ></area>
+			<area shape="rect" coords="80,5,145,30" href="about.html" alt="About" ></area>
+			<area shape="rect" coords="145,5,250,30" href="/subwayrating" alt="Stations" ></area>
+			<area shape="rect" coords="400,10,350,25" href="/accounts/login/" alt="login" ></area>
+		</map>	
+<script>
+
+$(document).ready(function() {
+
+  $('#searchbox').autocomplete({
+      source: function(req, response) {
+         $.ajax({
+          url: "http://robtuck.webfactional.com/subwayrating/stops",
+          datatype: "json",
+          success: function (data) {
+              var re = $.ui.autocomplete.escapeRegex(req.term);
+              var matcher = new RegExp( "^" + re, "i" );
+              response($.grep(data, function(item){return matcher.test(item.label);}) );
+              }
+          });
+      },
+      minLength: 2,
+      select: function( event, ui ) {
+		var url = 'http://robtuck.webfactional.com/subwayrating/' + ui.item.value + '.html';
+		window.location = url;
+    }
+    });
+
+});
+</script>
+   		<div id="wrapper" style="height:680px; " >    
+			<div id="leftcolumn" style="position:absolute; left:271px; top:0; " ></div>		 
+    {% block content %}
+    {% endblock content %}
+    		<div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " ></div>
+    
+    {% block extra_body %}
+    {% endblock extra_body %}
+  </body>
+</html>
