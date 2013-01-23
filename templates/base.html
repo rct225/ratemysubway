@@ -38,8 +38,8 @@ $(document).ready(function() {
       },
       minLength: 2,
       select: function( event, ui ) {
-		var url = '/subwayrating/' + ui.item.value + '.html';
-		$(location).attr('hostname', url);
+		var url = 'http://robtuck.webfactional.com/subwayrating/' + ui.item.value + '.html';
+		window.location = url;
     }
     });
 
