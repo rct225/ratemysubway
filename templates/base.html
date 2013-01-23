@@ -38,8 +38,8 @@ $(document).ready(function() {
       },
       minLength: 2,
       select: function( event, ui ) {
-		var url = ui.item.value + '.html';
-		$(location).attr('href', url);
+		var url = '/subwayrating/' + ui.item.value + '.html';
+		$(location).attr('hostname', url);
     }
     });
 
