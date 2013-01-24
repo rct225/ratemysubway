@@ -1,0 +1,441 @@
+Division,Line,Station_Name,Route_1,Route_2,Route_3,Route_4,Route_5,Route_6,Route_7,Route_8,Route_9,Route_10,Route_11,ADA,ADA_Notes,Free_Crossover,Entrance_Type,Entry,Exit_Only,Entrance_Staffing,North_South_Street,East_West_Street,Corner,Latitude,Longitude
+BMT,4th Avenue,25 St,R,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,4th Ave,25th St,SE,40660323,-73997952
+BMT,4th Avenue,36 St,N,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,4th Ave,36th St,NE,40654365,-74004113
+BMT,4th Avenue,4 Av-9 St,F,G,R,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,4th Ave,9th St,NE,40670387,-73988480
+BMT,4th Avenue,45 St,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,4th Ave,45th St,NE,40649389,-74009333
+BMT,4th Avenue,53 St,R,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,4th Ave,52nd St,NW,40645619,-74013688
+BMT,4th Avenue,59 St,N,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,4th Ave,59th St,NE,40641633,-74017362
+BMT,4th Avenue,77 St,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,4th Ave,77th St,NE,40629503,-74025452
+BMT,4th Avenue,86 St,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,4th Ave,85th St,SW,40623498,-74028204
+BMT,4th Avenue,95 St,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,4th Ave,93th St,NE,40617363,-74030404
+BMT,4th Avenue,Atlantic Av-Pacific St,B,D,N,Q,R,2,3,4,5,,,TRUE,,TRUE,Stair,YES,,FULL,4th Ave,Pacific St,NE,40683928,-73978412
+BMT,4th Avenue,Bay Ridge Av,R,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,4th Ave,68th St,NW,40635468,-74023313
+BMT,4th Avenue,DeKalb Av,Q,R,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Flatbush Ave,De Kalb Ave,SE,40689817,-73981082
+BMT,4th Avenue,Prospect Av,R,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,4th Ave,Prospect Ave,NE,40665299,-73992729
+BMT,4th Avenue,Union St,R,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,4th Ave,Union St,SE,40677171,-73983020
+BMT,Astoria,30 Av,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,30th Ave,NE,40766963,-73921192
+BMT,Astoria,36 Av,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,36th Ave,NW,40756796,-73929740
+BMT,Astoria,39 Av,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,39th Ave,NW,40752901,-73932903
+BMT,Astoria,Astoria Blvd,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,Hoyt Ave North,NE,40770870,-73916935
+BMT,Astoria,Astoria-Ditmars Blvd,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,23rd Ave,NE,40775025,-73911891
+BMT,Astoria,Broadway,N,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,31st St,Broadway,NW,40762217,-73925349
+BMT,Brighton,7 Av,B,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Carlton Ave,Park Pl,SE,40677324,-73972212
+BMT,Brighton,Atlantic Av,B,D,N,Q,R,2,3,4,5,,,TRUE,,TRUE,Easement,YES,,NONE,Ashland Pl,Hanson Pl,NE,40685222,-73977628
+BMT,Brighton,Avenue H,B,Q,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,15th St,Avenue H,SE,40629884,-73961882
+BMT,Brighton,Avenue J,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,15th St,Avenue J,SE,40625140,-73960798
+BMT,Brighton,Avenue M,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,15th St,Avenue M,SE,40617928,-73959454
+BMT,Brighton,Avenue U,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,15th St,Avenue U,SE,40598991,-73955828
+BMT,Brighton,Beverly Rd,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Marlborough Rd,Beverly Rd,SE,40644272,-73964528
+BMT,Brighton,Brighton Beach,B,Q,,,,,,,,,,FALSE,,TRUE,Escalator,YES,,FULL,7 St,Brighton Beach,NE,40577986,-73960258
+BMT,Brighton,Church Av,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,18th St,Church Ave,NW,40649427,-73963356
+BMT,Brighton,Cortelyou Rd,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Marlborough Rd,Cortelyou Rd,SE,40641314,-73963996
+BMT,Brighton,Kings Hwy,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,15th St,Kings Hwy,SE,40608835,-73957769
+BMT,Brighton,Neck Rd,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,15th St,Gravesend Neck Rd,NE,40595020,-73955120
+BMT,Brighton,Newkirk Av,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Marlborough Rd,Newkirk Ave,SE,40635034,-73962736
+BMT,Brighton,Ocean Pkwy,Q,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Ocean Pkwy,Brighton Beach Rd,SE,40576234,-73967561
+BMT,Brighton,Parkside Av,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Ocean Ave,Parkside Ave,NE,40655221,-73961516
+BMT,Brighton,Prospect Park,B,Q,FS,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Flatbush Ave,Empire Blvd,SW,40662727,-73962249
+BMT,Brighton,Sheepshead Bay,B,Q,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,14th St,Voorhies Ave,NE,40585734,-73954371
+BMT,Broadway,14 St-Union Sq,L,N,Q,R,4,5,6,,,,,TRUE,Lex not ADA,TRUE,Easement,YES,,NONE,4th Ave,15th St,SW,40735184,-73989793
+BMT,Broadway,23 St,N,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,5th Ave,22nd St,NE,40741208,-73989639
+BMT,Broadway,28 St,N,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Broadway,28th St,SE,40745089,-73988472
+BMT,Broadway,34 St-Herald Sq,B,D,F,M,N,Q,R,,,,,TRUE,,TRUE,Stair,YES,,NONE,6th Ave,34th St,NE,40749891,-73987495
+BMT,Broadway,49 St,N,Q,R,,,,,,,,,TRUE,Northbound Only,FALSE,Easement,YES,,NONE,7th Ave,49th St,NE,40760454,-73983388
+BMT,Broadway,57 St-7 Av,N,Q,R,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,7th Ave,57th St,NE,40765639,-73979764
+BMT,Broadway,5th Av/59 St,N,Q,R,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,5th Ave,60th St,SE,40764657,-73972229
+BMT,Broadway,8 St-NYU,N,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Broadway,8th Ave,NE,40730578,-73992216
+BMT,Broadway,Canal St,J,N,Q,R,Z,6,,,,,,FALSE,NQRZ not ADA,TRUE,Stair,YES,,PART,Broadway,Canal St,NE,40719498,-74001606
+BMT,Broadway,City Hall,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Broadway,Warren St,SE,40713521,-74006697
+BMT,Broadway,Cortlandt St,R,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Church St,Dey St,SE,40711065,-74010644
+BMT,Broadway,Court St,R,2,3,4,5,,,,,,,FALSE,R not ADA,TRUE,Stair,YES,,NONE,Clinton St,Montague St,NW,40694416,-73992619
+BMT,Broadway,Jay St-MetroTech,A,C,F,R,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Bridge St,Willoughby St,NE,40692315,-73985172
+BMT,Broadway,Lexington Av/59 St,N,Q,R,4,5,6,,,,,,FALSE,,TRUE,Stair,YES,,NONE,3rd Ave,60th St,NE,40762255,-73965918
+BMT,Broadway,Prince St,N,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Broadway,Prince St,NE,40724220,-73997633
+BMT,Broadway,Rector St,R,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Greenwich St,Morris St,NE,40706345,-74014000
+BMT,Broadway,Times Sq-42 St,A,C,E,N,Q,R,GS,1,2,3,7,TRUE,Shuttle not ADA,TRUE,Stair,YES,,NONE,Broadway,40th St,NE,40754301,-73986623
+BMT,Broadway,Whitehall St-South Ferry,R,1,,,,,,,,,,FALSE,R not ADA,TRUE,Stair,YES,,FULL,Whitehall St,Water St,SE,40701938,-74012588
+BMT,Canarsie,1 Av,L,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,1st Av,14th St,NE,40731397,-73982112
+BMT,Canarsie,3 Av,L,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,3rd Av,14th St,NE,40733122,-73986548
+BMT,Canarsie,6 Av,F,L,M,1,2,3,,,,,,FALSE,,TRUE,Stair,YES,,NONE,6th Av,14th St,SE,40737149,-73996578
+BMT,Canarsie,8 Av,A,C,E,L,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,8th Av,14th St,SE,40739550,-74002389
+BMT,Canarsie,Atlantic Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Snediker Av,New York Av,SW,40675380,-73902612
+BMT,Canarsie,Bedford Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Bedford Av,N 7th St,NE,40717821,-73957568
+BMT,Canarsie,Bushwick Av-Aberdeen St,L,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,De Sales Pl,Bushwick Av,NW,40682300,-73905149
+BMT,Canarsie,Canarsie-Rockaway Pkwy,L,,,,,,,,,,,TRUE,,TRUE,Walkway,YES,,NONE,E 98 St,Glenwood Rd,NE,40645957,-73901755
+BMT,Canarsie,DeKalb Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,DeKalb Av,Wycoff Av,NE,40704379,-73919026
+BMT,Canarsie,East 105 St,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Turnbull Av,E 105th St,SE,40651278,-73898862
+BMT,Canarsie,Graham Av,L,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Graham Av,Metropolitan Av,SE,40714439,-73944190
+BMT,Canarsie,Grand St,L,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Grand St,Bushwick Av,SW,40711912,-73940433
+BMT,Canarsie,Halsey St,L,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Covert St,Wyckoff Av,NW,40695201,-73903764
+BMT,Canarsie,Jefferson St,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Jefferson St,Wyckoff Av,NW,40707229,-73923725
+BMT,Canarsie,Livonia Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Van Sinderen Av,Livonia Av,SW,40663749,-73900482
+BMT,Canarsie,Lorimer St,G,L,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Lorimer St,Metropolitan Av,SE,40713908,-73949262
+BMT,Canarsie,Montrose Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Montrose Av,Bushwick Av,NW,40707819,-73939749
+BMT,Canarsie,Morgan Av,L,,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,Bogart St,Harrison Pl,NW,40706073,-73933633
+BMT,Canarsie,Myrtle-Wyckoff Avs,L,M,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Palmetto St,Wyckoff Av,NE,40699468,-73910648
+BMT,Canarsie,New Lots Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Van Sinderen Av,New Lots Av,SW,40659041,-73899409
+BMT,Canarsie,Sutter Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,LIRR Bay Ridge Divide,Sutter Av,NW,40668527,-73901765
+BMT,Canarsie,Wilson Av,L,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,LIRR Bay Ridge Divide,Wilson Ave,NW,40688805,-73904741
+BMT,Coney Island,Coney Island-Stillwell Av,D,F,N,Q,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Stillwell Ave,Mermaid Ave,SE,40576900,-73980846
+BMT,Coney Island,West 8 St-NY Aquarium,F,Q,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,8th St,Surf Ave,NW,40575929,-73976747
+BMT,Franklin Shuttle,Botanic Garden,FS,2,3,4,5,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Franklin Av,Eastern Pkwy,SW,40670588,-73959093
+BMT,Franklin Shuttle,Park Pl,FS,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Franklin Av,Park Pl,NW,40675208,-73957591
+BMT,Jamaica,104 St,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,104th St,Jamaica Av,NE,40695267,-73843223
+BMT,Jamaica,111 St,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,111th St,Jamaica Blvd,NE,40696771,-73837042
+BMT,Jamaica,121 St,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,121st St,Jamaica Av,NW,40700520,-73829231
+BMT,Jamaica,75 St-Elderts Ln,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,75th St,Jamaica,SE,40691285,-73866425
+BMT,Jamaica,85 St-Forest Pkwy,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,85th St,Jamaica Av,SE,40692381,-73858975
+BMT,Jamaica,Alabama Av,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Alabama Av,Fulton St,SE,40676803,-73899510
+BMT,Jamaica,Chauncey St,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Moffat St,Broadway,SW,40683417,-73911242
+BMT,Jamaica,Cleveland St,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Cleveland,,SW,40679530,-73885716
+BMT,Jamaica,Crescent St,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Pine St,Fulton St,SE,40683478,-73872548
+BMT,Jamaica,Cypress Hills,J,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,Autumn Av,Jamaica Av,SE,40690142,-73871630
+BMT,Jamaica,Flushing Av,J,M,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Flushing Av,Broadway,NW,40700847,-73941710
+BMT,Jamaica,Gates Av,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Linden St,Broadway,NW,40690142,-73923062
+BMT,Jamaica,Halsey St,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Weirfield St,Broadway,NE,40685946,-73915713
+BMT,Jamaica,Hewes St,J,M,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Hooper St,Broadway,NW,40707248,-73954326
+BMT,Jamaica,Kosciusko St,J,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Patchen Av,Broadway,SW,40692929,-73927940
+BMT,Jamaica,Lorimer St,J,M,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Lorimer St,Broadway,NW,40703454,-73946536
+BMT,Jamaica,Marcy Av,J,M,Z,,,,,,,,,TRUE,,FALSE,Stair,YES,,NONE,Havemeyer St,Broadway,NE,40708788,-73958826
+BMT,Jamaica,Myrtle Av,J,M,Z,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Broadway,Myrtle Av,NW,40696893,-73935461
+BMT,Jamaica,Norwood Av,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Norwood,,SE,40681643,-73878984
+BMT,Jamaica,Van Siclen Av,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Van Siclen,,SE,40677864,-73891566
+BMT,Jamaica,Woodhaven Blvd,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,95th St,Jamaica Av,SW,40694077,-73850476
+BMT,Myrtle Avenue,Central Av,M,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Myrtle Av,Cedar St,NW,40698033,-73926371
+BMT,Myrtle Avenue,Forest Av,M,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Forest Av,Myrtle Av,NW,40704729,-73902243
+BMT,Myrtle Avenue,Fresh Pond Rd,M,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,62nd St,67th Av,SE,40706115,-73895559
+BMT,Myrtle Avenue,Knickerbocker Av,M,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Myrtle Av,Greene Av,NW,40698717,-73918655
+BMT,Myrtle Avenue,Middle Village-Metropolitan Av,M,,,,,,,,,,,TRUE,,TRUE,Door,YES,,FULL,69th St,Metropolitan Av,SW,40712082,-73889540
+BMT,Myrtle Avenue,Seneca Av,M,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Myrtle Av,Seneca Av,NE,40702780,-73907515
+BMT,Nassau Loop,Bowery,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Bowery,Delencey St,NE,40720291,-73993411
+BMT,Nassau Loop,Broad St,J,Z,,,,,,,,,,FALSE,,TRUE,Stair,YES,,PART,Broad St,Wall St,SE,40706911,-74010494
+BMT,Nassau Loop,Canal St,J,N,Q,R,Z,6,,,,,,FALSE,NQRZ not ADA,TRUE,Stair,YES,,NONE,Centre St,Canal St,SW,40717823,-74000326
+BMT,Nassau Loop,Chambers St,J,Z,4,5,6,,,,,,,FALSE,JZ not ADA,TRUE,Stair,YES,,NONE,Lafayette St,Duane St,NE,40714199,-74003187
+BMT,Nassau Loop,Delancey St-Essex St,F,J,M,Z,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Norfolk St,Delancey St,NE,40718410,-73987181
+BMT,Nassau Loop,Fulton St,A,C,J,Z,2,3,4,5,,,,FALSE,,TRUE,Stair,YES,,NONE,Fulton St,Nassau St,NE,40710211,-74007584
+BMT,Sea Beach,18 Av,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,17th Av,64th St,NE,40621306,-73991469
+BMT,Sea Beach,20 Av,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,20th Ave,64th St,NE,40617341,-73984840
+BMT,Sea Beach,8 Av,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,8th Ave,62nd St,NW,40634552,-74010726
+BMT,Sea Beach,86 St,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,8th St,86th St,SE,40592724,-73978227
+BMT,Sea Beach,Avenue U,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,8th St,Avenue U,NE,40596459,-73978943
+BMT,Sea Beach,Bay Pkwy,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,8th St,Avenue O,NE,40610572,-73981613
+BMT,Sea Beach,Fort Hamilton Pkwy,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,11th Av,62nd St,NW,40630609,-74004067
+BMT,Sea Beach,Kings Hwy,N,,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,7th St,Highlawn Av,SW,40603212,-73980199
+BMT,Sea Beach,New Utrecht Av,D,N,,,,,,,,,,FALSE,,TRUE,Door,YES,,NONE,63rd St,15th Ave,SE,40624246,-73995962
+BMT,West End,18 Av,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,18th Ave,85th St,SE,40607602,-74001491
+BMT,West End,20 Av,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,20th Ave,86th St,NE,40604587,-73998007
+BMT,West End,25 Av,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,25th Ave,86th St,NE,40597889,-73986958
+BMT,West End,50 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,New Utrecht Ave,49th St,SE,40636405,-73994673
+BMT,West End,55 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,New Utrecht Ave,55th St,SE,40631389,-73995262
+BMT,West End,62 St,D,N,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,14th Ave,61st St,NE,40627299,-73996465
+BMT,West End,71 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,New Utrecht Ave,Bay Ridge Ave,SE,40620360,-73998550
+BMT,West End,79 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,New Utrecht Av,77th St,NE,40614018,-74000378
+BMT,West End,9 Av,D,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,9th Ave,New Utrecht Ave,NE,40646337,-73994489
+BMT,West End,Bay 50 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Stillwell Ave,Bay 50th St,SE,40588066,-73983498
+BMT,West End,Bay Pkwy,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Bay Pkwy,86th St,NE,40601898,-73993538
+BMT,West End,Fort Hamilton Pkwy,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,New Utrecht Ave,44th St,NE,40641379,-73994188
+IND,63rd Street,21 St-Queensbridge,F,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,21st St,41st Ave,NE,40754255,-73941935
+IND,63rd Street,Lexington Av/63 St,F,,,,,,,,,,,TRUE,,TRUE,Escalator,YES,,FULL,Lexington Av,63rd St,NW,40764881,-73966411
+IND,63rd Street,Roosevelt Island,F,,,,,,,,,,,TRUE,,TRUE,Door,YES,,FULL,West Rd,Unnamed St,SE,40759016,-73953505
+IND,6th Avenue,14 St,F,L,M,1,2,3,,,,,,FALSE,,TRUE,Stair,YES,,NONE,6th Ave,16th St,NE,40738678,-73995632
+IND,6th Avenue,2 Av,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,1st Ave,Houston St,NW,40723200,-73988863
+IND,6th Avenue,23 St,F,M,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,6th Ave,23rd St,NE,40742825,-73992383
+IND,6th Avenue,34 St-Herald Sq,B,D,F,M,N,Q,R,,,,,TRUE,,TRUE,Easement,YES,,PART,6th Av,33rd St,SW,40748950,-73988623
+IND,6th Avenue,42 St-Bryant Pk,B,D,F,M,7,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,6th Av,42nd St,NE,40754832,-73983657
+IND,6th Avenue,47-50 Sts-Rockefeller Ctr,B,D,F,M,,,,,,,,TRUE,,TRUE,Easement,YES,,FULL,6th Av,50th St,NE,40759953,-73980117
+IND,6th Avenue,57 St,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,6th Av,57th St,NE,40764564,-73976830
+IND,6th Avenue,B'way-Lafayette St,B,D,F,M,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Broadway,Houston St,SE,40725499,-73996387
+IND,6th Avenue,Delancey St-Essex St,F,J,M,Z,,,,,,,,FALSE,,TRUE,Escalator,NO,YES,FULL,Essex St,Delancey St,NE,40718841,-73987902
+IND,6th Avenue,East Broadway,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Essex St,Canal St,NE,40714404,-73989918
+IND,6th Avenue,Grand St,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Chrystie St,Grand St,NE,40718155,-73993452
+IND,6th Avenue,York St,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jay St,York St,SW,40701380,-73986655
+IND,8th Avenue,103 St,B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Central Park W,103rd St,NW,40796263,-73961610
+IND,8th Avenue,116 St,B,C,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Frederick Douglass Blvd,116th St,NE,40804428,-73955024
+IND,8th Avenue,125 St,A,B,C,D,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Saint Nicholas Av,127th St,SE,40811858,-73951351
+IND,8th Avenue,135 St,B,C,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Edgecombe Av,135th St,NE,40817188,-73947665
+IND,8th Avenue,14 St,A,C,E,L,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,8th Av,16th St,NE,40741046,-74001284
+IND,8th Avenue,145 St,A,B,C,D,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Saint Nicholas Av,147th St,NE,40825581,-73943444
+IND,8th Avenue,155 St,C,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Saint Nicholas Av,155th St,NE,40830921,-73941100
+IND,8th Avenue,163 St-Amsterdam Av,C,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Amsterdam Av,161st St,SE,40835192,-73940146
+IND,8th Avenue,168 St,A,C,1,,,,,,,,,TRUE,1 not ADA,TRUE,Stair,YES,,NONE,Broadway,169th St,NE,40841760,-73939067
+IND,8th Avenue,175 St,A,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Fort Washington Av,177th St,NE,40847859,-73939303
+IND,8th Avenue,181 St,A,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Fort Washington Av,185th St,SE,40852759,-73936636
+IND,8th Avenue,190 St,A,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Fort Washington Av,192nd St,NW,40858899,-73932702
+IND,8th Avenue,23 St,C,E,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,8th Av,25th St,NE,40746483,-73997142
+IND,8th Avenue,34 St-Penn Station,A,C,E,,,,,,,,,TRUE,,TRUE,Elevator,YES,,FULL,8th Av,34th St,SE,40751996,-73993327
+IND,8th Avenue,42 St-Port Authority Bus Terminal,A,C,E,N,Q,R,GS,1,2,3,7,TRUE,Shuttle not ADA,TRUE,Stair,YES,,NONE,8th Av,44th St,SE,40758401,-73988673
+IND,8th Avenue,50 St,C,E,,,,,,,,,,TRUE,Southbound Only,FALSE,Stair,YES,,NONE,8th Av,51st St,NE,40762900,-73985412
+IND,8th Avenue,59 St-Columbus Circle,A,B,C,D,1,,,,,,,TRUE,In Construction,TRUE,Stair,YES,,FULL,8th Av,58th St,NE,40767367,-73982137
+IND,8th Avenue,72 St,B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Central Park West,72nd St,NW,40776431,-73975977
+IND,8th Avenue,81 St-Museum of Natural History,B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Central Park West,81st St,NW,40782254,-73971741
+IND,8th Avenue,86 St,B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Central Park West,88th St,NW,40786769,-73968448
+IND,8th Avenue,96 St,B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Central Park West,97th St,NW,40792591,-73964316
+IND,8th Avenue,Canal St,A,C,E,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,6th Av,West Broadway,NW,40720758,-74005399
+IND,8th Avenue,Cathedral Pkwy (110 St),B,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Frederick Douglass Blvd,Cathedral Pkwy,SW,40800866,-73958405
+IND,8th Avenue,Chambers St,A,C,E,2,3,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Church St,Chambers St,NE,40714992,-74007739
+IND,8th Avenue,Dyckman St,A,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,Broadway,Dyckman St,NE,40865342,-73926964
+IND,8th Avenue,Fulton St,A,C,J,Z,2,3,4,5,,,,FALSE,,TRUE,Easement,YES,,FULL,Broadway,Fulton St,NE,40710692,-74008428
+IND,8th Avenue,High St,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Cadman Plaza West,Cranberry St,NW,40699405,-73991413
+IND,8th Avenue,Inwood-207 St,A,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Broadway,211th St,NE,40868036,-73919284
+IND,8th Avenue,Spring St,C,E,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,6th Av,Spring St,NE,40725583,-74003747
+IND,8th Avenue,W 4 St-Wash Sq,A,B,C,D,E,F,M,,,,,TRUE,,TRUE,Stair,YES,,NONE,6th Av,Waverly Pl,NE,40733259,-73999615
+IND,8th Avenue,World Trade Center,A,C,E,2,3,,,,,,,FALSE,Construction,TRUE,Stair,YES,,FULL,Church St,Park Pl,NE,40713333,-74009033
+IND,Archer Avenue,Jamaica Center-Parsons/Archer,E,J,Z,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,153rd St,Archer Ave,SW,40701874,-73801747
+IND,Archer Avenue,Jamaica-Van Wyck,E,,,,,,,,,,,FALSE,,TRUE,Elevator,YES,,FULL,Van Wyck Expwy,89th Ave,SW,40701263,-73816372
+IND,Archer Avenue,Sutphin Blvd-Archer Av-JFK Airport,E,J,Z,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Sutphin Blvd,Archer Ave,SE,40700554,-73807353
+IND,Concourse,155 St,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Frederick Douglass Blvd,156th St,NW,40830313,-73936687
+IND,Concourse,161 St-Yankee Stadium,B,D,4,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,River Av,161st St,NE,40828011,-73925588
+IND,Concourse,167 St,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,167th St,NE,40834609,-73917245
+IND,Concourse,170 St,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,171st St,NE,40839751,-73912743
+IND,Concourse,174-175 Sts,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Grand Concourse,175th St,NE,40846354,-73909047
+IND,Concourse,182-183 Sts,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,182nd St,NE,40856039,-73900449
+IND,Concourse,Bedford Park Blvd,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Grand Concourse,203rd St,NE,40874025,-73886466
+IND,Concourse,Fordham Rd,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Grand Concourse,Fordham Rd,NE,40862608,-73896662
+IND,Concourse,Kingsbridge Rd,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,196th St,SE,40867688,-73892739
+IND,Concourse,Norwood-205 St,D,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Bainbridge Av,205th St,SE,40874902,-73879267
+IND,Concourse,Tremont Av,B,D,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Grand Concourse,179th St,NE,40851176,-73904263
+IND,Crosstown,21 St,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jackson Ave,47th Ave,SE,40744552,-73948425
+IND,Crosstown,Bedford-Nostrand Avs,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Bedford Ave,Lafayette Ave,SE,40689367,-73954957
+IND,Crosstown,Broadway,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Union Ave,Broadway,SE,40705114,-73950062
+IND,Crosstown,Classon Av,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Classon Ave,Lafayette Ave,SE,40688781,-73959871
+IND,Crosstown,Clinton-Washington Avs,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Clinton Ave,Lafayette Ave,NE,40688114,-73967575
+IND,Crosstown,Court Sq,E,G,M,7,,,,,,,,FALSE,,TRUE,Easement,YES,,FULL,Hunter St,44th Ave,SW,40747371,-73944287
+IND,Crosstown,Flushing Av,G,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Union Ave,Flushing Ave,NE,40699985,-73949895
+IND,Crosstown,Fulton St,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Fort Greene Pl,Lafayette Ave,NE,40687159,-73976290
+IND,Crosstown,Greenpoint Av,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Manhattan Ave,Greenpoint Ave,SE,40730122,-73954049
+IND,Crosstown,Metropolitan Av,G,L,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Union Ave,Metropolitan Ave,SE,40713744,-73951455
+IND,Crosstown,Myrtle-Willoughby Avs,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Marcy Ave,Myrtle Ave,NE,40695500,-73948960
+IND,Crosstown,Nassau Av,G,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Manhattan Ave,Nassau Ave,SE,40723765,-73950566
+IND,Culver,18 Av,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,McDonald Ave,Parkville Ave,NE,40628708,-73976646
+IND,Culver,Avenue I,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,McDonald Ave,Avenue J,NE,40624301,-73975817
+IND,Culver,Avenue N,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Ave,Avenue N,NE,40614304,-73973910
+IND,Culver,Avenue P,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Ave,Avenue P,NE,40609041,-73972904
+IND,Culver,Avenue U,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Av,Avenue U,SE,40596897,-73973137
+IND,Culver,Avenue X,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Av,Avenue X,NE,40590266,-73974051
+IND,Culver,Bay Pkwy,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Ave,Bay Pkwy,SE,40620825,-73975138
+IND,Culver,Ditmas Av,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Ave,Ditmas Ave,SE,40635389,-73977914
+IND,Culver,Kings Hwy,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,McDonald Ave,Kings Hwy,SE,40603999,-73972124
+IND,Culver,Neptune Av,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,West 6th St,Neptune Av,NE,40580576,-73974443
+IND,Far Rockaway,Beach 25 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 25th St,Rockaway Frwy,SW,40599670,-73761596
+IND,Far Rockaway,Beach 36 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 35th,Rockaway Frwy,SW,40595469,-73767919
+IND,Far Rockaway,Beach 44 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 44th St,Edgemere Av,SW,40592897,-73775715
+IND,Far Rockaway,Beach 60 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 59th Sr,Rockaway Frwy,SW,40592292,-73789153
+IND,Far Rockaway,Beach 67 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 67 St,Rockaway Fwy,NW,40591166,-73796173
+IND,Far Rockaway,Far Rockaway-Mott Av,A,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Beach 22nd St,Mott Ave,SW,40604657,-73754178
+IND,Fulton Street,Broadway Junction,A,C,J,L,Z,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Fulton St,Van Sinderen Av,SW,40678334,-73903922
+IND,Fulton Street,Clinton-Washington Avs,C,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,Clinton Av,Fulton Av,SE,40683317,-73966741
+IND,Fulton Street,Euclid Av,A,C,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Euclid Av,Pitkin Av,NE,40675533,-73871742
+IND,Fulton Street,Franklin Av,C,FS,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Franklin Av,Fulton St,NE,40681256,-73955590
+IND,Fulton Street,Hoyt-Schermerhorn,A,C,G,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Bond St,Schermerhorn St,NW,40688396,-73984216
+IND,Fulton Street,Jay St-MetroTech,A,C,F,R,,,,,,,,TRUE,,TRUE,Easement,YES,,NONE,Jay St,Metrotech Walk,SE,40693491,-73987089
+IND,Fulton Street,Kingston-Throop Avs,A,C,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Kingston Av,Fulton St,SE,40679804,-73941119
+IND,Fulton Street,Lafayette Av,C,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Oxford St,Fulton Av,NE,40685789,-73972760
+IND,Fulton Street,Liberty Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Pennsylvania Av,Liberty Av,SE,40674268,-73896312
+IND,Fulton Street,Nostrand Av,A,C,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Nostrand Av,Fulton St,SE,40680228,-73949414
+IND,Fulton Street,Ralph Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Ralph Av,Fulton St,NE,40678984,-73921442
+IND,Fulton Street,Rockaway Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Hopkinson Av,Fulton St,SW,40678317,-73913651
+IND,Fulton Street,Shepherd Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Shepherd Av,Pitkin Av,SE,40673970,-73880667
+IND,Fulton Street,Utica Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Stuyvesant Av,Fulton St,SW,40679346,-73931987
+IND,Fulton Street,Van Siclen Av,A,C,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Van Siclen Av,Pitkin Av,SE,40672479,-73890164
+IND,Liberty Avenue,104 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,104th St,Liberty Av,SE,40681994,-73836742
+IND,Liberty Avenue,111 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,109th St,Liberty Av,SE,40683972,-73832816
+IND,Liberty Avenue,80 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,77th St,Liberty Av,NE,40679361,-73860284
+IND,Liberty Avenue,88 St,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,88th St,Liberty Av,SE,40679828,-73850401
+IND,Liberty Avenue,Grant Av,A,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Grant Av,Pitkin Av,NE,40676735,-73865491
+IND,Liberty Avenue,Ozone Park-Lefferts Blvd,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,116th St,Liberty Av,SW,40685720,-73827092
+IND,Liberty Avenue,Rockaway Blvd,A,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,94th St,Liberty Av,SW,40680158,-73845131
+IND,Prospect Park,15 St-Prospect Park,F,G,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Howard Pl,Windsor Pl,NE,40659436,-73979951
+IND,Prospect Park,4 Av-9 St,F,G,R,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,4th Ave,10th St,NW,40670010,-73989248
+IND,Prospect Park,7 Av,F,G,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,7th Ave,9th St,NE,40667004,-73981331
+IND,Prospect Park,Bergen St,F,G,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Smith St,Bergen St,NE,40686727,-73990269
+IND,Prospect Park,Carroll St,F,G,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Smith St,President St,NE,40680944,-73994247
+IND,Prospect Park,Church Av,F,G,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,McDonald Ave,Church Ave,SE,40642692,-73979260
+IND,Prospect Park,Fort Hamilton Pkwy,F,G,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Prospect Ave,Greenwood Ave,NW,40651608,-73975596
+IND,Prospect Park,Smith-9 Sts,F,G,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Smith St,9th St,NE,40674725,-73997505
+IND,Queens,169 St,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,168th St,Hillside Av,SE,40709852,-73794564
+IND,Queens,36 St,M,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,34th St,Northern Blvd,SW,40751868,-73930585
+IND,Queens,46 St,M,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,46th St,Broadway,NW,40756868,-73914303
+IND,Queens,5 Av/53 St,E,M,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,5th Ave,53rd St,NE,40760373,-73975562
+IND,Queens,63 Dr-Rego Park,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,63rd Dr,Queens Blvd,NW,40730037,-73861343
+IND,Queens,65 St,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,65th St,Broadway,NE,40749330,-73897382
+IND,Queens,67 Av,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,67th Av,Queens Blvd,NE,40727073,-73853226
+IND,Queens,7 Av,B,D,E,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,7th Ave,53rd St,NE,40762937,-73981578
+IND,Queens,75 Av,E,F,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,75th Av,Queens Blvd,NW,40719061,-73837916
+IND,Queens,Briarwood-Van Wyck Blvd,F,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Van Wyck Blvd,Queens Blvd,SE,40709316,-73819773
+IND,Queens,Court Sq-23 St,E,G,M,7,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,21st St,44th Ave,NE,40748195,-73947163
+IND,Queens,Elmhurst Av,M,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Britton Av,Broadway,NW,40742937,-73882708
+IND,Queens,Forest Hills-71 Av,E,F,M,R,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,108th St,Queens Blvd,NW,40721916,-73844352
+IND,Queens,Grand Av-Newtown,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,54th St,Queens Blvd,NE,40736277,-73876424
+IND,Queens,Jackson Heights-Roosevelt Av,E,F,M,R,7,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,73rd St,37th Rd,NE,40747238,-73892146
+IND,Queens,Jamaica-179 St,F,,,,,,,,,,,TRUE,,TRUE,Elevator,YES,,FULL,179th Pl,Hillside Av,SW,40712581,-73783377
+IND,Queens,Kew Gardens-Union Tpke,E,F,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,80th Rd,Queens Blvd,SE,40713663,-73830011
+IND,Queens,Lexington Av/53 St,E,M,6,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,3rd Av,53rd St,SW,40757636,-73969623
+IND,Queens,Northern Blvd,M,R,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,54th St,Broadway,SW,40753428,-73906847
+IND,Queens,Parsons Blvd,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,153rd St,Hillside Av,SE,40707062,-73804332
+IND,Queens,Queens Plaza,E,M,R,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Jackson Ave,Queens Blvd,NE,40748807,-73937057
+IND,Queens,Steinway St,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Steinway St,Broadway,SE,40758279,-73919433
+IND,Queens,Sutphin Blvd,F,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,144th St,Hillside Av,NE,40705341,-73811860
+IND,Queens,Woodhaven Blvd,M,R,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,59th Av,Queens Blvd,NE,40733555,-73869588
+IND,Rockaway,Aqueduct Racetrack,A,,,,,,,,,,,FALSE,,FALSE,Ramp,YES,,NONE,,,,40672190,-73834446
+IND,Rockaway,Aqueduct-North Conduit Av,A,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,99th Pl,Hawtree St,NE,40669339,-73834721
+IND,Rockaway,Beach 105 St,H,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 106th St,Rockaway Frwy,SW,40583248,-73827163
+IND,Rockaway,Beach 90 St,H,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 89th St,Rockaway Frwy,SW,40587929,-73813755
+IND,Rockaway,Beach 98 St,H,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Beach 98th St,Rockaway Frwy,SW,40585342,-73820249
+IND,Rockaway,Broad Channel,A,H,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,West Rd,Noel Rd,NE,40608007,-73815967
+IND,Rockaway,Howard Beach-JFK Airport,A,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,103rd St,159th Av,SE,40660372,-73830369
+IND,Rockaway,Rockaway Park-Beach 116 St,H,,,,,,,,,,,TRUE,,TRUE,Door,YES,,FULL,Beach 116th St,Wainwright Ct,NE,40580510,-73837418
+IRT,7th Ave-Bway,103 St,1,,,,,,,,,,,FALSE,,TRUE,Stair,NO,YES,NONE,Broadway,104th St,SE,40799584,-73968091
+IRT,7th Ave-Bway,116 St-Columbia University,1,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Broadway,116th St,NE,40808245,-73963495
+IRT,7th Ave-Bway,125 St,1,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Broadway,125th St,SW,40815230,-73958366
+IRT,7th Ave-Bway,137 St-City College,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,137th St,NE,40821454,-73953856
+IRT,7th Ave-Bway,14 St,F,L,M,1,2,3,,,,,,FALSE,,TRUE,Stair,YES,,FULL,7th Ave,14th St,NE,40738585,-73999405
+IRT,7th Ave-Bway,145 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,145th St,NW,40826513,-73950162
+IRT,7th Ave-Bway,157 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,157th St,SE,40833860,-73944620
+IRT,7th Ave-Bway,168 St,A,C,1,,,,,,,,,FALSE,1 not ADA,TRUE,Stair,NO,YES,NONE,Broadway,168th St,SE,40840717,-73939720
+IRT,7th Ave-Bway,18 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,7th Ave,18th St,NE,40741617,-73997197
+IRT,7th Ave-Bway,181 St,1,,,,,,,,,,,FALSE,,TRUE,Easement,YES,,FULL,Saint Nicholas Ave,181st St,NE,40849435,-73933428
+IRT,7th Ave-Bway,191 St,1,,,,,,,,,,,FALSE,,TRUE,Ramp,YES,,FULL,Broadway,190th St,NE,40856413,-73932605
+IRT,7th Ave-Bway,207 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,10th Ave,207th St,NE,40864599,-73918681
+IRT,7th Ave-Bway,215 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,10th Ave,215th St,NE,40869729,-73914954
+IRT,7th Ave-Bway,23 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,7th Ave,23rd St,NE,40744120,-73995348
+IRT,7th Ave-Bway,231 St,1,,,,,,,,,,,TRUE,,FALSE,Stair,YES,,NONE,Broadway,231st St,NE,40879091,-73904538
+IRT,7th Ave-Bway,238 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,Broadway,238th St,SE,40885226,-73900439
+IRT,7th Ave-Bway,28 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,7th Ave,28th St,NE,40747216,-73993121
+IRT,7th Ave-Bway,34 St-Penn Station,1,2,3,,,,,,,,,TRUE,,TRUE,Stair,YES,,PART,7th Ave,34th St,NE,40751020,-73990323
+IRT,7th Ave-Bway,50 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Broadway,50th St,NE,40761212,-73983357
+IRT,7th Ave-Bway,59 St-Columbus Circle,A,B,C,D,1,,,,,,,TRUE,In Construction,TRUE,Stair,YES,,NONE,Broadway,60th St,SW,40768777,-73982106
+IRT,7th Ave-Bway,66 St-Lincoln Center,1,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Broadway,66th St,SE,40773457,-73982004
+IRT,7th Ave-Bway,72 St,1,2,3,,,,,,,,,TRUE,,TRUE,Door,YES,,FULL,Broadway,72nd St,NE,40779146,-73981822
+IRT,7th Ave-Bway,79 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,79th St,NE,40783985,-73979662
+IRT,7th Ave-Bway,86 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,86th St,NE,40788272,-73976083
+IRT,7th Ave-Bway,96 St,1,2,3,,,,,,,,,TRUE,,TRUE,Door,YES,,FULL,Broadway,96th St,S,40794312,-73972015
+IRT,7th Ave-Bway,Canal St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Canal St,Varick St,NE,40722497,-74005994
+IRT,7th Ave-Bway,Cathedral Pkwy (110 St),1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,Cathedral Pkwy,NE,40804257,-73966422
+IRT,7th Ave-Bway,Chambers St,1,2,3,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Chambers St,West Broadway,NE,40715576,-74009031
+IRT,7th Ave-Bway,Christopher St-Sheridan Sq,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,7th Ave,West 4th St,SE,40733402,-74002748
+IRT,7th Ave-Bway,Dyckman St,1,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Hillside Ave,Nagle Ave,SW,40861187,-73925078
+IRT,7th Ave-Bway,Franklin St,1,,,,,,,,,,,FALSE,,FALSE,Stair,NO,YES,NONE,Varick St,North Moore St,NE,40719918,-74006620
+IRT,7th Ave-Bway,Houston St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Varick St,Houston St,NE,40728656,-74005086
+IRT,7th Ave-Bway,Marble Hill-225 St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Broadway,225th St,SE,40874308,-73909795
+IRT,7th Ave-Bway,Rector St,1,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Greenwich St,Rector St,NE,40708107,-74013445
+IRT,7th Ave-Bway,South Ferry,R,1,,,,,,,,,,TRUE,R not ADA,TRUE,Escalator,YES,,NONE,Adm Gge Dewey Prom,State St,SE,40701961,-74013397
+IRT,7th Ave-Bway,Times Sq-42 St,A,C,E,N,Q,R,GS,1,2,3,7,TRUE,Shuttle not ADA,TRUE,Stair,NO,YES,NONE,Broadway,W 41 St,SW,40755021,-73986866
+IRT,7th Ave-Bway,Van Cortlandt Park-242 St,1,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Broadway,242nd St,NE,40889946,-73897798
+IRT,Clark Street,Borough Hall,R,2,3,4,5,,,,,,,TRUE,R not ADA,TRUE,Stair,YES,,FULL,Cadman Plaza West,Montague St,NE,40693838,-73990119
+IRT,Clark Street,Clark St,2,3,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Clark St,Henry St,NW,40697649,-73993060
+IRT,Clark Street,Fulton St,A,C,J,Z,2,3,4,5,,,,FALSE,,TRUE,Easement,YES,,NONE,William St,Fulton St,NE,40709458,-74006139
+IRT,Clark Street,Park Place,A,C,E,2,3,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Park Pl,Broadway,NW,40712712,-74007766
+IRT,Clark Street,Wall St,2,3,,,,,,,,,,FALSE,,TRUE,Easement,YES,,NONE,William St,Cedar St,NW,40707431,-74008778
+IRT,Dyre Avenue,Baychester Av,5,,,,,,,,,,,FALSE,,TRUE,Door,NO,YES,NONE,Baychester Av,Tillotson Av,NW,40879330,-73837858
+IRT,Dyre Avenue,Eastchester-Dyre Av,5,,,,,,,,,,,FALSE,,TRUE,Door,YES,,PART,Dyre Av,Light St,NE,40887980,-73831195
+IRT,Dyre Avenue,Gun Hill Rd,5,,,,,,,,,,,FALSE,,TRUE,Easement,NO,YES,NONE,Dewitt Pl,E Gun Hill Rd,NW,40870039,-73845724
+IRT,Dyre Avenue,Morris Park,5,,,,,,,,,,,FALSE,,TRUE,Door,YES,,PART,Esplanade,Paulding Av,W,40854544,-73860248
+IRT,Dyre Avenue,Pelham Pkwy,5,,,,,,,,,,,FALSE,,TRUE,Door,YES,,PART,Esplanade,Laconia Av,NE,40858804,-73855515
+IRT,Eastern Parkway,Atlantic Av,B,D,N,Q,R,2,3,4,5,,,TRUE,,TRUE,Easement,YES,,FULL,Ashland Pl,Hanson Pl,SE,40684976,-73977880
+IRT,Eastern Parkway,Bergen St,2,3,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Flatbush Ave,Bergen St,SE,40680695,-73974748
+IRT,Eastern Parkway,Crown Hts-Utica Av,3,4,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,Schenectady Ave,Eastern Pkwy,NE,40669102,-73934213
+IRT,Eastern Parkway,Eastern Pkwy-Brooklyn Museum,2,3,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Washington Ave,Eastern Pkwy,NW,40672122,-73964154
+IRT,Eastern Parkway,Franklin Av,FS,2,3,4,5,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Franklin Ave,Eastern Pkwy,NE,40670732,-73957696
+IRT,Eastern Parkway,Grand Army Plaza,2,3,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Flatbush Ave,Plaza Street East,SE,40675110,-73970822
+IRT,Eastern Parkway,Hoyt St,2,3,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Bridge St,Fulton St,NE,40690931,-73985250
+IRT,Eastern Parkway,Kingston Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Kingston Ave,Eastern Pkwy,SE,40669261,-73941948
+IRT,Eastern Parkway,Nevins St,2,3,4,5,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Flatbush Ave,Livingston St,NE,40688085,-73980243
+IRT,Eastern Parkway,Nostrand Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Nostrand Ave,Eastern Pkwy,SE,40669711,-73950247
+IRT,Flushing,103 St-Corona Plaza,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,103rd St,Roosevelt Av,SE,40749787,-73862389
+IRT,Flushing,111 St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,111th St,Roosevelt Av,SE,40751551,-73855628
+IRT,Flushing,33 St-Rawson St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,33rd St,Queens Blvd,NE,40744724,-73931533
+IRT,Flushing,40 St-Lowery St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,40th St,Queens Blvd,NE,40743882,-73924112
+IRT,Flushing,46 St-Bliss St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,46th St,Queens Blvd,NE,40743217,-73918564
+IRT,Flushing,5 Av,B,D,F,M,7,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,5th Av,42nd St,SW,40753409,-73981130
+IRT,Flushing,52 St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,52nd St,Roosevelt Av,SW,40743933,-73913003
+IRT,Flushing,69 St,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,69th St,Roosevelt Av,NE,40746509,-73896268
+IRT,Flushing,74 St-Broadway,E,F,M,R,7,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,74th St,Roosevelt Av,NE,40747025,-73891413
+IRT,Flushing,82 St-Jackson Hts,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,82nd St,Roosevelt Av,NE,40747812,-73883876
+IRT,Flushing,90 St-Elmhurst Av,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,90th St,Roosevelt Av,SE,40748318,-73876432
+IRT,Flushing,Court Sq,E,G,M,7,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,23rd St,45th Rd,NE,40746232,-73945322
+IRT,Flushing,Flushing-Main St,7,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,PART,Main St,Roosevelt Av,SE,40759946,-73828414
+IRT,Flushing,Grand Central-42 St,GS,4,5,6,7,,,,,,,TRUE,,TRUE,Easement,YES,,NONE,3rd Av,42nd St,SW,40750851,-73975078
+IRT,Flushing,Hunters Point Av,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,21st St,49th Av,NE,40742405,-73948110
+IRT,Flushing,Junction Blvd,7,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Junction Blvd,Roosevelt Av,SE,40749095,-73869120
+IRT,Flushing,Mets-Willets Point,7,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,126th St,Roosevelt Av,NW,40754768,-73845598
+IRT,Flushing,Queensboro Plaza,N,Q,7,,,,,,,,,FALSE,,TRUE,Easement,YES,,FULL,Queens Plaza N,27th St,NW,40750835,-73939671
+IRT,Flushing,Vernon Blvd-Jackson Av,7,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Jackson Av,50th Av,NE,40742496,-73952482
+IRT,Flushing,Woodside-61 St,7,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,61st St,Roosevelt Av,NE,40745717,-73903063
+IRT,Jerome,138 St-Grand Concourse,4,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,East 138th St,NE,40813091,-73929689
+IRT,Jerome,149 St-Grand Concourse,2,4,5,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Grand Concourse,149th St,SE,40818405,-73927101
+IRT,Jerome,161 St-Yankee Stadium,B,D,4,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,River A,E 161 St,E,40827707,-73925900
+IRT,Jerome,167 St,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,River Av,167th St,NW,40835726,-73921059
+IRT,Jerome,170 St,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,170th St,SE,40840076,-73917648
+IRT,Jerome,176 St,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,176th St,SE,40848501,-73911633
+IRT,Jerome,183 St,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,183rd St,NE,40858453,-73903690
+IRT,Jerome,Bedford Pk Blvd-Lehman College,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Bedford Park Blvd,SW,40873528,-73889754
+IRT,Jerome,Burnside Av,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Burnside Av,SE,40853596,-73907393
+IRT,Jerome,Fordham Rd,4,,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Jerome Av,Fordham Rd,NE,40862814,-73900815
+IRT,Jerome,Kingsbridge Rd,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Kingsbridge Rd,NE,40867766,-73897039
+IRT,Jerome,Mosholu Pkwy,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Mosholu Pkwy,SE,40879899,-73884244
+IRT,Jerome,Mt Eden Av,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Mt Eden Av,NE,40844389,-73914578
+IRT,Jerome,Woodlawn,4,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Jerome Av,Bainbridge Av,SE,40886737,-73878120
+IRT,Lenox,116 St,2,3,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Lenox Av,116th St,NE,40802111,-73949437
+IRT,Lenox,Central Park North (110 St),2,3,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Lenox Av,111th St,NW,40799033,-73952058
+IRT,Lenox,Harlem-148 St,3,,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Adam C Powell Blvd,149th St,NE,40824069,-73936981
+IRT,Lexington,96 St,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Lexington Av,96th St,NE,40785903,-73950695
+IRT,Lexington,Astor Pl,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,4th Av,E 8th St,NE,40730084,-73990838
+IRT,Lexington,Bleecker St,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Lafayette St,Mulberry St,NE,40725845,-73994320
+IRT,Lexington,Bowling Green,4,5,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Broadway,Bowling Green,NW,40704629,-74013502
+IRT,Lexington,Brooklyn Bridge-City Hall,J,Z,4,5,6,,,,,,,TRUE,JZ not ADA,TRUE,Stair,YES,,NONE,Centre St,Reade St,NW,40713899,-74003642
+IRT,Lexington,Canal St,J,N,Q,R,Z,6,,,,,,TRUE,NQRZ not ADA,TRUE,Elevator,YES,,NONE,Lafayette St,Canal St,NW,40718589,-74000552
+IRT,Lexington,Fulton St,A,C,J,Z,2,3,4,5,,,,FALSE,,TRUE,Stair,YES,,NONE,Broadway,Fulton St,NW,40711026,-74009190
+IRT,Lexington,Grand Central-42 St,GS,4,5,6,7,,,,,,,TRUE,,TRUE,Easement,YES,,PART,Lexington Av,43rd St,SE,40751801,-73975294
+IRT,Lexington,Spring St,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Lafayette St,Spring St,NE,40722235,-73996818
+IRT,Lexington,Wall St,4,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Broadway,Thames St,SW,40708436,-74011298
+IRT,New Lots,Junius St,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Powell St,Livonia Ave,SW,40663426,-73902636
+IRT,New Lots,New Lots Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Ashford St,Livonia Ave,SW,40666285,-73883276
+IRT,New Lots,Pennsylvania Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Pennsylvania Ave,Livonia Ave,NE,40664869,-73893779
+IRT,New Lots,Rockaway Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Rockaway Ave,Livonia Ave,SE,40662401,-73908809
+IRT,New Lots,Saratoga Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Saratoga Ave,Livonia Ave,SE,40661558,-73915225
+IRT,New Lots,Sutter Av-Rutland Rd,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Rutland Rd,E. 98th St,NE,40664891,-73922675
+IRT,New Lots,Van Siclen Av,3,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Van Siclen Ave,Livonia Ave,SE,40665431,-73888386
+IRT,Nostrand,Beverly Rd,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Nostrand Av,Beverly Rd,SE,40645046,-73948684
+IRT,Nostrand,Church Av,2,5,,,,,,,,,,TRUE,,FALSE,Elevator,YES,,FULL,Nostrand Av,Church Av,SE,40650748,-73949384
+IRT,Nostrand,Flatbush Av-Brooklyn College,2,5,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,Nostrand Av,Flatbush Av,NE,40632750,-73947375
+IRT,Nostrand,Newkirk Av,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Nostrand Av,Newkirk Av,SE,40639924,-73948161
+IRT,Nostrand,President St,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Nostrand Av,President St,NE,40668145,-73950458
+IRT,Nostrand,Sterling St,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Nostrand Av,Sterling St,NE,40663226,-73950670
+IRT,Nostrand,Winthrop St,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Nostrand Av,Winthrop St,NE,40657184,-73949976
+IRT,Pelham,Brook Av,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Brook Av,138th St,NE,40807580,-73918957
+IRT,Pelham,Buhre Av,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Edison Av,Westchester Av,NE,40847185,-73832264
+IRT,Pelham,Castle Hill Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Castle Hill Av,Westchester Av,NE,40834321,-73851440
+IRT,Pelham,Cypress Av,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Cypress Av,138th St,NE,40805155,-73913208
+IRT,Pelham,E 143 St-St Mary's St,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Southern Blvd,St Mary's St,NE,40808340,-73907618
+IRT,Pelham,E 149 St,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Southern Blvd,149th St,NW,40812367,-73903797
+IRT,Pelham,Elder Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Elder Av,Westchester Av,NE,40828688,-73879018
+IRT,Pelham,Hunts Point Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Hunts Point Av,163rd St,SE,40820819,-73890442
+IRT,Pelham,Longwood Av,6,,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Southern Blvd,Longwood Av,NE,40816367,-73895924
+IRT,Pelham,Middletown Rd,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Westchester Av,Middletown Rd,NW,40843935,-73836386
+IRT,Pelham,Morrison Av-Soundview,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Morrison Av,Westchester Av,NE,40829641,-73874447
+IRT,Pelham,Parkchester,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Metropolitan Av,Westchester Av,NW,40833225,-73860888
+IRT,Pelham,Pelham Bay Park,6,,,,,,,,,,,TRUE,,TRUE,Elevator,YES,,FULL,Bruckner Expwy,Westchester Av,SW,40853041,-73826991
+IRT,Pelham,St Lawrence Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,St Lawrence Av,Westchester Av,SW,40831466,-73867410
+IRT,Pelham,Westchester Sq-East Tremont Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Westchester Av,Ferris Pl,SW,40840128,-73842875
+IRT,Pelham,Whitlock Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Whitlock Av,Westchester Av,SE,40827295,-73886082
+IRT,Pelham,Zerega Av,6,,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Westchester Av,Zerega Ave,NW,40836954,-73846653
+IRT,Shuttle,Grand Central-42 St,GS,4,5,6,7,,,,,,,TRUE,,TRUE,Easement,YES,,NONE,Madison Av,42nd St,NE,40752830,-73978917
+IRT,White Plains,174 St,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Boston Rd,174th St,NE,40837306,-73887287
+IRT,White Plains,219 St,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains Rd,219th St,SE,40883439,-73862743
+IRT,White Plains,225 St,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains Rd,225th St,SE,40887660,-73860444
+IRT,White Plains,233 St,2,5,,,,,,,,,,TRUE,,TRUE,Stair,YES,,FULL,White Plains Rd,233rd St,SE,40893215,-73857344
+IRT,White Plains,3 Av-149 St,2,5,,,,,,,,,,TRUE,,FALSE,Stair,YES,,FULL,3rd Av,149th St,NW,40816265,-73917456
+IRT,White Plains,Allerton Av,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains Rd,Allerton Av,SE,40865257,-73867246
+IRT,White Plains,Bronx Park East,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,Birchall Av,Sagamore St,NE,40849128,-73868213
+IRT,White Plains,Burke Av,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains,Burke Av,SE,40871215,-73867043
+IRT,White Plains,E 180 St,2,5,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,Morris Park Av,180th St,NW,40841453,-73872892
+IRT,White Plains,Freeman St,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Southern Blvd,Freeman St,NE,40830177,-73891482
+IRT,White Plains,Gun Hill Rd,2,5,,,,,,,,,,FALSE,,TRUE,Door,YES,,FULL,White Plains Rd,211th St,SW,40877779,-73866185
+IRT,White Plains,Intervale Av,2,5,,,,,,,,,,FALSE,,TRUE,Escalator,YES,,FULL,Intervale Av,Westchester Av,NE,40822400,-73896508
+IRT,White Plains,Jackson Av,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,FULL,Jackson Av,Westchester Av,NW,40816873,-73907379
+IRT,White Plains,Nereid Av,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains Rd,Nereid Av,SE,40898323,-73854288
+IRT,White Plains,Pelham Pkwy,2,5,,,,,,,,,,TRUE,,TRUE,Stair,YES,,NONE,White Plains Rd,Pelham Pkwy,NE,40858029,-73867481
+IRT,White Plains,Prospect Av,2,5,,,,,,,,,,FALSE,,FALSE,Stair,YES,,NONE,Prospect Av,Longwood Av,NE,40819684,-73901348
+IRT,White Plains,Simpson St,2,5,,,,,,,,,,TRUE,,FALSE,Stair,YES,,FULL,Westchester Av,Simpson St,NE,40824358,-73892724
+IRT,White Plains,Wakefield-241 St,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,FULL,White Plains Rd,241st St,NE,40903509,-73850124
+IRT,White Plains,West Farms Sq-E Tremont Av,2,5,,,,,,,,,,FALSE,,TRUE,Stair,YES,,NONE,Boston Rd,178th St,NW,40841078,-73879397
