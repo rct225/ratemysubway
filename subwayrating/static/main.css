@@ -1,0 +1,39 @@
+#searchbox {
+	position:absolute;
+	left:554px;
+	top:102px;
+	width:199px;
+}
+
+#logo {
+	position:absolute;
+	left:271px;
+	top:19px;
+	z-index: 1;
+}
+
+#menubar {
+	position:absolute;
+	left:511px;
+	top:47px;
+}
+
+#top5 {
+	position:relative;
+	float:left;
+	width:45%;
+	height:300px;
+	top:33px;
+}
+
+#bottom5 {
+	position:relative;
+	height:300px;
+	width:45%;
+	float:right;
+	top:32px;
+}
+
+.mystyle {
+}
+

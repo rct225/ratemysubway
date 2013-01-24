@@ -1,0 +1,111 @@
+/*
+      Created by Keith Donegan of Code-Sucks.com
+	  
+	  E-Mail: Keithdonegan@gmail.com
+	  
+	  You can do whatever you want with these layouts,
+	  but it would be greatly appreciated if you gave a link
+	  back to http://www.code-sucks.com
+	  
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+#wrapper {
+	width:922px;
+	margin:0px auto 0px auto;
+}
+
+#leftcolumn {
+	color:#333333;
+	background-image:initial;
+	background-repeat-x:no-repeat;
+	background-repeat-y:no-repeat;
+	background-repeat:no-repeat;
+	background-attachment:initial;
+	background-position:initial initial;
+	background-position-x:initial;
+	background-position-y:initial;
+	background-origin:initial;
+	background-clip:initial;
+	background-color:#FF8000;
+	height:657px;
+	width:100px;
+	border-image:initial;
+	border:1px solid #CCCCCC;
+	margin:0px 5px 5px 0px;
+	padding:10px;
+}
+
+#content {
+	float:left;
+	color:#333333;
+	background-image:initial;
+	background-repeat-x:no-repeat;
+	background-repeat-y:no-repeat;
+	background-repeat:no-repeat;
+	background-attachment:initial;
+	background-position:initial initial;
+	background-position-x:initial;
+	background-position-y:initial;
+	background-origin:initial;
+	background-clip:initial;
+	background-color:#FFFFFF;
+	height:398px;
+	width:499px;
+	display:inline;
+	margin:0px 5px 5px 0px;
+	padding:10px;
+}
+
+#rightcolumn {
+	color:#333333;
+	background-image:initial;
+	background-repeat-x:no-repeat;
+	background-repeat-y:no-repeat;
+	background-repeat:no-repeat;
+	background-attachment:initial;
+	background-position:initial initial;
+	background-position-x:initial;
+	background-position-y:initial;
+	background-origin:initial;
+	background-clip:initial;
+	background-color:#FF8000;
+	height:660px;
+	width:100px;
+	float:left;
+	border-image:initial;
+	border:1px solid #CCCCCC;
+	margin:0px 0px 5px 0px;
+	padding:10px;
+}
+
+#footer {
+	width:700px;
+	clear:both;
+	color:#333333;
+	background-image:initial;
+	background-repeat-x:no-repeat;
+	background-repeat-y:no-repeat;
+	background-repeat:no-repeat;
+	background-attachment:initial;
+	background-position:initial initial;
+	background-position-x:initial;
+	background-position-y:initial;
+	background-origin:initial;
+	background-clip:initial;
+	background-color:#4C4C4C;
+	border-image:initial;
+	border:1px solid #CCCCCC;
+	margin:0px 0px 10px 0px;
+	padding:10px;
+}
+
