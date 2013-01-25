@@ -3,23 +3,11 @@
 {% block head %}
 {% endblock %}
 
-{% block content %}
-<div id="wrapper" style="height:680px; " >
-
-
-         
-		<div id="leftcolumn" style="position:absolute; left:271px; top:0; " >
-		</div>		 
+{% block content %} 
 		<div id="content" style="position:fixed; left:398px; top:175px; " >    
 	 		<h3 style="width:110px; position:relative; left:10px; top:24px; float:left; " >Best Stations</h3>
 			<h3 style="width:110px; position:relative; left:268px; top:8px; " >Worst Stations</h3>
 			<iframe src="subwayrating/top5" name="top5" id="top5" style="left:8px; " ></iframe>
 			<iframe src="subwayrating/bottom5" name="bottom5" id="bottom5" style="left:-7px; " ></iframe>
 		</div>
-
-		 
-
-		<div id="rightcolumn" style="position:absolute; left:921px; top:-4px; " >		 
-		</div>
-
 {% endblock %}
