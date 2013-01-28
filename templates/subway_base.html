@@ -46,9 +46,11 @@ $(document).ready(function() {
 });
 </script>
    		<div id="wrapper" style="height:680px; " >    
-			<div id="leftcolumn" style="position:absolute; left:200px; " ></div>		 
+			<div id="leftcolumn" style="position:absolute; left:200px; " ></div>
+			<div id="content">		 
     {% block content %}
     {% endblock content %}
+    		</div>
     		<div id="rightcolumn" style="position:absolute; left:1000px; " ></div>
     </div>
     {% block extra_body %}
