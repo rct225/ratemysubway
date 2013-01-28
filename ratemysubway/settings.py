@@ -157,7 +157,7 @@ FACEBOOK_APP_ID = '138235456316939'
 FACEBOOK_API_SECRET = '8cfc5debf263eca6e0a8835bff8ea042'
 
 
-LOGIN_REDIRECT_URL = '/subwayrating'
+#LOGIN_REDIRECT_URL = '/subwayrating'
 
 
 COMMENTS_APP = 'comments'
