@@ -22,6 +22,7 @@ body {
 #wrapper {
 	width:922px;
 	margin:0px auto 0px auto;
+	height:680px;
 }
 
 #leftcolumn {
@@ -43,6 +44,8 @@ body {
 	border:1px solid #CCCCCC;
 	margin:0px 5px 5px 0px;
 	padding:10px;
+	position: absolute;
+	left: 200px;
 }
 
 #content {
@@ -86,6 +89,8 @@ body {
 	border:1px solid #CCCCCC;
 	margin:0px 0px 5px 0px;
 	padding:10px;
+	position: absolute;
+	left: 1000px;
 }
 
 #footer {

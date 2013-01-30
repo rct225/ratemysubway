@@ -10,6 +10,7 @@
 <body>
 {% block body %}
 {% block content %}
+<div id="content" style="position:fixed; left:398px; top:175px; " >
 <ul>
 {% if user.is_authenticated %}
 <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
@@ -19,6 +20,7 @@
 <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
 {% endif %}
 </ul>
+</div>
 {% endblock %}
 {% endblock %}
 {% block extra_body %}
