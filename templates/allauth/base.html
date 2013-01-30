@@ -1,13 +1,8 @@
 {% extends "subway_base.html" %}
 {% load url from future %}
-<!DOCTYPE html>
-<html>
-<head>
-<title>{% block head_title %}{% endblock %}FFFF</title>
+{% block head_title %}FFFF{% endblock %}
 {% block extra_head %}
 {% endblock %}
-</head>
-<body>
 {% block body %}
 {% block content %}
 <div id="content" style="position:fixed; left:398px; top:175px; " >
@@ -25,5 +20,3 @@
 {% endblock %}
 {% block extra_body %}
 {% endblock %}
-</body>
-</html>
