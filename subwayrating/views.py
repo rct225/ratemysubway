@@ -51,11 +51,21 @@ def view_comment(request, slug):
      
         
 def top_n_stops(request):
-    reviews = SubwayStop.objects.all()
+    cache_key = 'list_of_subways_cache_key'
+    cache_time = 3600
+    reviews = cache.get(cache_key)
+    if not reviews:
+        reviews = SubwayStop.objects.all()
+        cache.set(cache_key, reviews, cache_time)   
     return render_to_response('subwayrating/topn.html', {'reviews': heapq.nlargest(5, reviews)}, context_instance=RequestContext(request))
 
 def bottom_n_stops(request):
-    reviews = SubwayStop.objects.all()
+    cache_key = 'list_of_subways_cache_key'
+    cache_time = 3600
+    reviews = cache.get(cache_key)
+    if not reviews:
+        reviews = SubwayStop.objects.all()
+        cache.set(cache_key, reviews, cache_time)
     return render_to_response('subwayrating/topn.html', {'reviews': heapq.nsmallest(5, reviews)}, context_instance=RequestContext(request))
 
 def comment_messages(sender, comment, request, **kwargs):
