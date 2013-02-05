@@ -28,7 +28,7 @@ class SubwayStop(models.Model):
     
     def save(self, *args, **kwargs):
         super(SubwayStop, self).save(*args, **kwargs)
-        self.average_rating = self.compute_average_rating(self)
+        self.average_rating = self.compute_average_rating()
         
     def get_title(self):
         title = self.name + '(' + self.line + ')'
@@ -46,7 +46,7 @@ class SubwayStop(models.Model):
     
     def get_average_rating(self):
         if self.average_rating == None:
-            self.average_rating = self.compute_average_rating(self)          
+            self.average_rating = self.compute_average_rating()          
         return self.average_rating;
     
     def __lt__(self, other):
