@@ -46,7 +46,8 @@ class SubwayStop(models.Model):
     
     def get_average_rating(self):
         if self.average_rating == None:
-            self.average_rating = self.compute_average_rating()          
+#            self.average_rating = self.compute_average_rating()
+            self.save()         
         return self.average_rating;
     
     def __lt__(self, other):
