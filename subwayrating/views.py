@@ -75,6 +75,8 @@ def comment_messages(sender, comment, request, **kwargs):
             messages.SUCCESS,
             _('Thank you for your comment!')
         )
+        subway_stop = SubwayStop.objects.get(pk=comment.object_pk)
+        subway_stop.save()
     else:
         messages.add_message(
             request,
