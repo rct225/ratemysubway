@@ -20,16 +20,21 @@ class SubwayStop(models.Model):
     slug = models.SlugField(max_length=100)
     enable_comments = models.BooleanField()
     
+    average_rating = models.DecimalField(max_digits=3, decimal_places=2)
     rating = CommentWithRating()
         
     def __unicode__(self):
         return self.name
     
+    def save(self, *args, **kwargs):
+        super(SubwayStop, self).save(*args, **kwargs)
+        self.average_rating = self.compute_average_rating(self)
+        
     def get_title(self):
         title = self.name + '(' + self.line + ')'
         return title
 
-    def get_average_rating(self):
+    def compute_average_rating(self):
         ratings = CommentWithRating.objects.for_model(self)
         ratings_count = ratings.count()
         if ratings_count == 0:
@@ -37,15 +42,11 @@ class SubwayStop(models.Model):
         rating_sum = 0
         for rating in ratings:
             rating_sum = rating_sum + rating.rating
-        return rating_sum / ratings_count
+        return round((rating_sum / ratings_count), 2)
     
-    def get_google_map(self):
-        lat = ( self.latitude / 1000000 ) 
-        lng = ( self.longitude / 1000000 )
-        static_map_url = "http://maps.googleapis.com/maps/api/staticmap?center="+ lat + "," + lng + "&zoom=16&size=200x200&sensor=false"
-        return "FOOO"
+    def get_average_rating(self):
+        return self.average_rating;
     
-        
     def __lt__(self, other):
         return self.get_average_rating() < other.get_average_rating()
     
