@@ -45,7 +45,7 @@ class SubwayStop(models.Model):
         return round((rating_sum / ratings_count), 2)
     
     def get_average_rating(self):
-        if self.average_rating:
+        if self.average_rating == None:
             self.average_rating = self.compute_average_rating(self)          
         return self.average_rating;
     
